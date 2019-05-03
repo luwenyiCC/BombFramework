@@ -2,6 +2,48 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "AsyncNet.Core/1.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AsyncNet.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AsyncNet.Core.dll": {}
+        }
+      },
+      "AsyncNet.Tcp/1.2.5": {
+        "type": "package",
+        "dependencies": {
+          "AsyncNet.Core": "1.2.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/AsyncNet.Tcp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AsyncNet.Tcp.dll": {}
+        }
+      },
+      "Google.Protobuf/3.7.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Google.Protobuf.Tools/3.7.0": {
+        "type": "package",
+        "build": {
+          "build/Google.Protobuf.Tools.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildCrossTargeting/Google.Protobuf.Tools.targets": {}
+        }
+      },
       "Microsoft.NETCore.App/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -211,6 +253,81 @@
     }
   },
   "libraries": {
+    "AsyncNet.Core/1.2.4": {
+      "sha512": "pYz+v1V+0nrXQ6kVszA96hh3EsB9Nv6oTz4DcrUzAFZr/kCmbm9YwwwF5SWboLO50OgBTl4pRaXchAFNc9ed4A==",
+      "type": "package",
+      "path": "asyncnet.core/1.2.4",
+      "files": [
+        ".signature.p7s",
+        "LICENSE",
+        "asyncnet.core.1.2.4.nupkg.sha512",
+        "asyncnet.core.nuspec",
+        "lib/net45/AsyncNet.Core.dll",
+        "lib/net45/AsyncNet.Core.xml",
+        "lib/netstandard2.0/AsyncNet.Core.dll",
+        "lib/netstandard2.0/AsyncNet.Core.xml"
+      ]
+    },
+    "AsyncNet.Tcp/1.2.5": {
+      "sha512": "us0AtxXx0owu+wibbHwVqlwkehwBXZaeHcGis60rSBNzAzNnTMNvIcDn2ZQFcXo3xJPDoRmO0yqO/BwQSl+x6g==",
+      "type": "package",
+      "path": "asyncnet.tcp/1.2.5",
+      "files": [
+        ".signature.p7s",
+        "LICENSE",
+        "asyncnet.tcp.1.2.5.nupkg.sha512",
+        "asyncnet.tcp.nuspec",
+        "lib/net45/AsyncNet.Tcp.dll",
+        "lib/net45/AsyncNet.Tcp.xml",
+        "lib/netstandard2.0/AsyncNet.Tcp.dll",
+        "lib/netstandard2.0/AsyncNet.Tcp.xml"
+      ]
+    },
+    "Google.Protobuf/3.7.0": {
+      "sha512": "iGSH+kB233wWy4VjEC+7KrMJTD3K7Nw2VpnboSgbyU1SrCQZUVpKdJ7NKDZVL7JvFYBiUq4VRMgC0OAXxJAvjA==",
+      "type": "package",
+      "path": "google.protobuf/3.7.0",
+      "files": [
+        ".signature.p7s",
+        "google.protobuf.3.7.0.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/netstandard1.0/Google.Protobuf.dll",
+        "lib/netstandard1.0/Google.Protobuf.pdb",
+        "lib/netstandard1.0/Google.Protobuf.xml"
+      ]
+    },
+    "Google.Protobuf.Tools/3.7.0": {
+      "sha512": "cugYwXGX9kEjnG3KbcvLrVmyA85JZ8hLX/vgvIA7CpGTWAXCP6wMrhNCdv6zR/6TFRlZPQgMifgw9yOAV23Mow==",
+      "type": "package",
+      "path": "google.protobuf.tools/3.7.0",
+      "files": [
+        ".signature.p7s",
+        "build/Google.Protobuf.Tools.targets",
+        "buildCrossTargeting/Google.Protobuf.Tools.targets",
+        "google.protobuf.tools.3.7.0.nupkg.sha512",
+        "google.protobuf.tools.nuspec",
+        "tools/google/protobuf/any.proto",
+        "tools/google/protobuf/api.proto",
+        "tools/google/protobuf/descriptor.proto",
+        "tools/google/protobuf/duration.proto",
+        "tools/google/protobuf/empty.proto",
+        "tools/google/protobuf/field_mask.proto",
+        "tools/google/protobuf/source_context.proto",
+        "tools/google/protobuf/struct.proto",
+        "tools/google/protobuf/timestamp.proto",
+        "tools/google/protobuf/type.proto",
+        "tools/google/protobuf/wrappers.proto",
+        "tools/linux_x64/protoc",
+        "tools/linux_x86/protoc",
+        "tools/macosx_x64/protoc",
+        "tools/macosx_x86/protoc",
+        "tools/windows_x64/protoc.exe",
+        "tools/windows_x86/protoc.exe"
+      ]
+    },
     "Microsoft.NETCore.App/2.2.0": {
       "sha512": "QU8taCyeyePwatrj+h+750lMnsPCq3YPaGmsdtSHXPCjDyjto2KT7QDNVet0oRliX4PjaINpyg0Yzd9DnQ/Wkw==",
       "type": "package",
@@ -682,6 +799,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "AsyncNet.Tcp >= 1.2.5",
+      "Google.Protobuf >= 3.7.0",
+      "Google.Protobuf.Tools >= 3.7.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -724,6 +844,18 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "AsyncNet.Tcp": {
+            "target": "Package",
+            "version": "[1.2.5, )"
+          },
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.7.0, )"
+          },
+          "Google.Protobuf.Tools": {
+            "target": "Package",
+            "version": "[3.7.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

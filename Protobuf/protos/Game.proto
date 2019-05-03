@@ -1,0 +1,7 @@
+﻿syntax = "proto3";
+package GameNet;
+option csharp_namespace = "GameNet";
+message Game 
+{
+	int32 ID = 1;
+}

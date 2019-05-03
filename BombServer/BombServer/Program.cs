@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Google.Protobuf;
 namespace BombServer
 {
     class Program
@@ -7,6 +7,9 @@ namespace BombServer
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            //哈哈哈
+
+            
         }
     }
 }
