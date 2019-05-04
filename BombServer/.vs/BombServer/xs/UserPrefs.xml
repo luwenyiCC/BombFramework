@@ -1,8 +1,15 @@
 ﻿<Properties StartupConfiguration="{801E9B22-3860-41C2-8BB4-96A35CA88F73}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Network/Tcp/TcpComponent.cs">
     <Files>
-      <File FileName="BombServer/Program.cs" Line="16" Column="1" />
-      <File FileName="BombServer/protobuf/server.proto" Line="1" Column="1" />
+      <File FileName="BombServer/Program.cs" Line="16" Column="46" />
+      <File FileName="BombServer/Kernel/Interface/IComponent.cs" Line="7" Column="13" />
+      <File FileName="BombServer/Kernel/Interface/ISystem.cs" Line="6" Column="6" />
+      <File FileName="BombServer/Kernel/Interface/IEntiry.cs" Line="8" Column="47" />
+      <File FileName="BombServer/Game.cs" Line="7" Column="28" />
+      <File FileName="BombServer/Kernel/Thread/OneThreadSynchronizationContext.cs" Line="20" Column="10" />
+      <File FileName="BombServer/Kernel/Entity.cs" Line="50" Column="29" />
+      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="15" Column="30" />
+      <File FileName="BombServer/Kernel/Abstract/Component.cs" Line="4" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,11 +17,18 @@
           <Node name="BombServer" expanded="True">
             <Node name="BombServer" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True">
-                  <Node name="Google.Protobuf" expanded="True" />
-                  <Node name="Google.Protobuf.Tools" selected="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Database" expanded="True" />
+              <Node name="Kernel" expanded="True">
+                <Node name="Abstract" expanded="True" />
+                <Node name="Interface" expanded="True" />
+                <Node name="Thread" expanded="True" />
+              </Node>
+              <Node name="Network" expanded="True">
+                <Node name="Tcp" expanded="True">
+                  <Node name="TcpComponent.cs" selected="True" />
                 </Node>
-                <Node name="SdkDependencies" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -27,6 +41,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.BombServer FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.BombServer PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
