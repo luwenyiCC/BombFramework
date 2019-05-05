@@ -8,7 +8,7 @@
       <File FileName="BombServer/Game.cs" Line="7" Column="28" />
       <File FileName="BombServer/Kernel/Thread/OneThreadSynchronizationContext.cs" Line="20" Column="10" />
       <File FileName="BombServer/Kernel/Entity.cs" Line="50" Column="29" />
-      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="45" Column="25" />
+      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="44" Column="30" />
       <File FileName="BombServer/Kernel/Abstract/Component.cs" Line="4" Column="36" />
       <File FileName="BombServer/protocol/RPC.cs" Line="43" Column="42" />
       <File FileName="../BombClient/Assets/Script/Network/Tcp/TcpSession.cs" Line="30" Column="36" />

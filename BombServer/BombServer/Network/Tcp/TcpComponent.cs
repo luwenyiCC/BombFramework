@@ -42,7 +42,7 @@ namespace BombServer.Network
 
                     // Save the person to a stream
                     rpc.WriteTo(stream);
-
+                    IMessage
 
 
                     bytes = stream.ToArray();
