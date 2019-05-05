@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{3620B0A1-741E-4705-D0A8-494D09D45DBB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Network/Tcp/TcpSession.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets/Third/Client/AsyncNetTcpClient.cs" Line="495" Column="78" />
-      <File FileName="Assets/Third/AsyncNet.Tcp/Server/Events/TcpServerExceptionEventArgs.cs" Line="6" Column="66" />
-      <File FileName="Assets/Third/AsyncNet.Tcp/Client/AsyncNetTcpClient.cs" Line="17" Column="30" />
       <File FileName="Assets/Script/Network/TcpComponent.cs" Line="9" Column="1" />
-      <File FileName="Assets/Script/Network/Tcp/TcpSession.cs" Line="10" Column="64" />
+      <File FileName="Assets/Script/Network/Tcp/TcpSession.cs" Line="75" Column="11" />
+      <File FileName="Assets/Script/Network/Tcp/NewClass.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Demo.cs" Line="23" Column="20" />
+      <File FileName="Assets/Script/Network/protocol/Game.cs" Line="117" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,6 +14,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
                 <Node name="Network" expanded="True">
+                  <Node name="protocol" expanded="True">
+                    <Node name="Game.cs" selected="True" />
+                  </Node>
                   <Node name="Tcp" expanded="True" />
                 </Node>
               </Node>
@@ -21,13 +24,21 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>cos</Value>
+          <Value>cos.ToArray()</Value>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9cfaebc1-5e8c-448a-af9f-61f7497773b2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8d2edb53-99bd-4ce7-80ba-88eebeb76f40" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Script/Demo.cs" relfile="Assets/Script/Demo.cs" line="15" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

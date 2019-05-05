@@ -1,6 +1,6 @@
 ﻿syntax = "proto3";
-package RPC;
-option csharp_namespace = "RPC";
+package BombFramework;
+option csharp_namespace = "BombFramework";
 message RPC 
 {
 	int32 ID = 1;

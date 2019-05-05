@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{801E9B22-3860-41C2-8BB4-96A35CA88F73}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Network/Tcp/TcpComponent.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="BombServer/Program.cs" Line="16" Column="46" />
       <File FileName="BombServer/Kernel/Interface/IComponent.cs" Line="7" Column="13" />
@@ -8,8 +8,10 @@
       <File FileName="BombServer/Game.cs" Line="7" Column="28" />
       <File FileName="BombServer/Kernel/Thread/OneThreadSynchronizationContext.cs" Line="20" Column="10" />
       <File FileName="BombServer/Kernel/Entity.cs" Line="50" Column="29" />
-      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="15" Column="30" />
+      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="45" Column="25" />
       <File FileName="BombServer/Kernel/Abstract/Component.cs" Line="4" Column="36" />
+      <File FileName="BombServer/protocol/RPC.cs" Line="43" Column="42" />
+      <File FileName="../BombClient/Assets/Script/Network/Tcp/TcpSession.cs" Line="30" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,6 +32,7 @@
                   <Node name="TcpComponent.cs" selected="True" />
                 </Node>
               </Node>
+              <Node name="protocol" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -39,7 +42,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/Network/Tcp/TcpComponent.cs" relfile="BombServer/Network/Tcp/TcpComponent.cs" line="50" column="68" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.BombServer PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />

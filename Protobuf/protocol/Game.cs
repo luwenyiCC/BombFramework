@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace GameNet {
+namespace BombFramework {
 
   /// <summary>Holder for reflection information generated from Game.proto</summary>
   public static partial class GameReflection {
@@ -24,12 +24,12 @@ namespace GameNet {
     static GameReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpHYW1lLnByb3RvEgdHYW1lTmV0IhIKBEdhbWUSCgoCSUQYASABKAVCCqoC",
-            "B0dhbWVOZXRiBnByb3RvMw=="));
+            "CgpHYW1lLnByb3RvEg1Cb21iRnJhbWV3b3JrIhIKBEdhbWUSCgoCSUQYASAB",
+            "KAVCEKoCDUJvbWJGcmFtZXdvcmtiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GameNet.Game), global::GameNet.Game.Parser, new[]{ "ID" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::BombFramework.Game), global::BombFramework.Game.Parser, new[]{ "ID" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace GameNet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GameNet.GameReflection.Descriptor.MessageTypes[0]; }
+      get { return global::BombFramework.GameReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

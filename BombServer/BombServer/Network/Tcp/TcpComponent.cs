@@ -1,7 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 using AsyncNet.Tcp.Server;
+using BombFramework;
 using BombServer.Kernel;
+using Google.Protobuf;
 
 namespace BombServer.Network
 {
@@ -29,6 +32,41 @@ namespace BombServer.Network
             server.FrameArrived += (sender, e) =>//TCP帧从特定客户端/对等端到达时触发
             {
                 Console.WriteLine($"Server received: {System.Text.Encoding.UTF8.GetString(e.FrameData)}");
+                var peer = e.RemoteTcpPeer;
+                byte[] bytes=null;
+               
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    RPC rpc = new RPC();
+                    rpc.ID = 1;
+
+                    // Save the person to a stream
+                    rpc.WriteTo(stream);
+
+
+
+                    bytes = stream.ToArray();
+                }
+                using (MemoryStream stream = new MemoryStream(bytes))
+                {
+                    RPC rpc = new RPC();
+                    rpc.MergeFrom(stream);
+
+
+
+                    Console.WriteLine(rpc.ID);
+                }
+
+                foreach (var item in bytes)
+                {
+                    Console.WriteLine(item);
+
+                }
+                peer.Post(bytes);
+
+                
+
+
             };
             server.RemoteTcpPeerExceptionOccured += (sender, e) =>//当处理特定客户机/对等点时发生错误时触发
             { 

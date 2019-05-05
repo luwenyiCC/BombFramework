@@ -1,6 +1,6 @@
 ﻿syntax = "proto3";
-package GameNet;
-option csharp_namespace = "GameNet";
+package BombFramework;
+option csharp_namespace = "BombFramework";
 message Game 
 {
 	int32 ID = 1;
