@@ -16,9 +16,7 @@
               <Node name="Script" expanded="True">
                 <Node name="Network" expanded="True">
                   <Node name="protocol" expanded="True" />
-                  <Node name="ProtoTools" expanded="True">
-                    <Node name="ProtoTools.cs" selected="True" />
-                  </Node>
+                  <Node name="ProtoTools" expanded="True" selected="True" />
                   <Node name="Tcp" expanded="True" />
                 </Node>
               </Node>
@@ -30,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="192c8ed1-ac36-4197-af9b-732183378e1b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b3f2a0dd-a671-4d01-8cc0-1f1620b68136" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Script/Demo.cs" relfile="Assets/Script/Demo.cs" line="15" column="1" />

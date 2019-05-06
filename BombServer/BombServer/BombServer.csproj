@@ -20,5 +20,9 @@
     <Folder Include="Kernel\Thread\" />
     <Folder Include="Kernel\Interface\" />
     <Folder Include="Kernel\Abstract\" />
+    <Folder Include="Log\" />
+    <Folder Include="Kernel\System\" />
+    <Folder Include="Kernel\Attribut\" />
+    <Folder Include="Kernel\ProtoTools\" />
   </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@ using System.Threading;
 using AsyncNet.Tcp.Server;
 using BombFramework;
 using BombServer.Kernel;
+using BombServer.Log;
 using Google.Protobuf;
 
 namespace BombServer.Network
@@ -14,7 +15,7 @@ namespace BombServer.Network
 
         public TcpComponent()
         {
-
+            Debug.Log("ManagedThreadId:" + Thread.CurrentThread.ManagedThreadId);
             server = new AsyncNetTcpServer(12100);
             server.ConnectionClosed += (sender, e) => //当特定客户端/对等端连接关闭时触发
             { 
@@ -22,47 +23,26 @@ namespace BombServer.Network
             server.ConnectionEstablished += (sender, e) => //当新客户机/对等点连接到服务器时触发
             {
                 var peer = e.RemoteTcpPeer;
-                Console.WriteLine($"New connection from [{peer.IPEndPoint}]");
+                Debug.Log($"New connection from [{peer.IPEndPoint}]");
+                Debug.Log("ManagedThreadId:" + Thread.CurrentThread.ManagedThreadId);
 
-                var hello = "Hello from server!";
-                var bytes = System.Text.Encoding.UTF8.GetBytes(hello);
-                peer.Post(bytes);
+
             };
 
             server.FrameArrived += (sender, e) =>//TCP帧从特定客户端/对等端到达时触发
             {
                 Console.WriteLine($"Server received: {System.Text.Encoding.UTF8.GetString(e.FrameData)}");
                 var peer = e.RemoteTcpPeer;
-                byte[] bytes=null;
+                //byte[] bytes=null;
                
-                using (MemoryStream stream = new MemoryStream())
-                {
-                    RPC rpc = new RPC();
-                    rpc.ID = 1;
-
-                    // Save the person to a stream
-                    rpc.WriteTo(stream);
-                    IMessage
 
 
-                    bytes = stream.ToArray();
-                }
-                using (MemoryStream stream = new MemoryStream(bytes))
-                {
-                    RPC rpc = new RPC();
-                    rpc.MergeFrom(stream);
+                //foreach (var item in bytes)
+                //{
+                //    Console.WriteLine(item);
 
-
-
-                    Console.WriteLine(rpc.ID);
-                }
-
-                foreach (var item in bytes)
-                {
-                    Console.WriteLine(item);
-
-                }
-                peer.Post(bytes);
+                //}
+                //peer.Post(bytes);
 
                 
 
