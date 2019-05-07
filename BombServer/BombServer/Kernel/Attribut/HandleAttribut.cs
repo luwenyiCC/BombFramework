@@ -5,6 +5,6 @@ namespace BombServer.Kernel
     {
         protected int msgType;
 
-        public  int MsgType { get => msgType;  }
+        public int MsgType { get => msgType; }
     }
 }

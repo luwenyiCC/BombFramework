@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{801E9B22-3860-41C2-8BB4-96A35CA88F73}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Kernel/Attribut/HandleAttribut.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Kernel/Attribut/EventHandleAttribut.cs">
     <Files>
-      <File FileName="BombServer/Game.cs" Line="25" Column="1" />
-      <File FileName="BombServer/Program.cs" Line="17" Column="45" />
-      <File FileName="BombServer/Kernel/System/EventSystem.cs" Line="17" Column="70" />
+      <File FileName="BombServer/Game.cs" Line="11" Column="14" />
+      <File FileName="BombServer/Program.cs" Line="21" Column="1" />
+      <File FileName="BombServer/Kernel/System/EventSystem.cs" Line="21" Column="1" />
       <File FileName="BombServer/Kernel/Interface/IHandle.cs" Line="26" Column="38" />
-      <File FileName="BombServer/Kernel/Attribut/EventHandleAttribut.cs" Line="2" Column="28" />
+      <File FileName="BombServer/Kernel/Attribut/EventHandleAttribut.cs" Line="9" Column="19" />
       <File FileName="BombServer/protocol/Game.cs" Line="1" Column="1" />
-      <File FileName="BombServer/Kernel/Attribut/NetHandleAttribut.cs" Line="7" Column="47" />
+      <File FileName="BombServer/Kernel/Attribut/NetHandleAttribut.cs" Line="9" Column="1" />
       <File FileName="BombServer/Kernel/Abstract/Component.cs" Line="4" Column="27" />
-      <File FileName="BombServer/Network/Handle/LoginRequest.cs" Line="8" Column="6" />
+      <File FileName="BombServer/Network/Handle/LoginRequest.cs" Line="7" Column="16" />
       <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="8" Column="42" />
       <File FileName="BombServer/Demo/Hello.cs" Line="17" Column="30" />
       <File FileName="BombServer/Kernel/Interface/IComponent.cs" Line="7" Column="13" />
@@ -17,7 +17,7 @@
       <File FileName="BombServer/Kernel/Interface/ISystem.cs" Line="6" Column="6" />
       <File FileName="BombServer/Kernel/Entity.cs" Line="52" Column="1" />
       <File FileName="BombServer/Kernel/Thread/OneThreadSynchronizationContext.cs" Line="20" Column="10" />
-      <File FileName="BombServer/Kernel/Attribut/HandleAttribut.cs" Line="1" Column="1" />
+      <File FileName="BombServer/Kernel/Attribut/HandleAttribut.cs" Line="8" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +28,7 @@
               <Node name="Kernel" expanded="True">
                 <Node name="Abstract" expanded="True" />
                 <Node name="Attribut" expanded="True">
-                  <Node name="HandleAttribut.cs" selected="True" />
+                  <Node name="EventHandleAttribut.cs" selected="True" />
                 </Node>
                 <Node name="Interface" expanded="True" />
                 <Node name="System" expanded="True" />
@@ -45,14 +45,18 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>eventHandle.MsgType</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/Kernel/System/EventSystem.cs" relfile="BombServer/Kernel/System/EventSystem.cs" line="20" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.BombServer PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
