@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BombServer.Log
+namespace BombServer
 {
     public class Debug
     {

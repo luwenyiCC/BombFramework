@@ -8,7 +8,7 @@ namespace BombServer.Kernel
         public Entity()
         {
         }
-        private Dictionary<Type, IComponent> componentDict = new Dictionary<Type, IComponent>();
+        protected Dictionary<Type, IComponent> componentDict = new Dictionary<Type, IComponent>();
         public IComponent AddComponent(IComponent component)
         {
             Type type = component.GetType();
@@ -49,5 +49,6 @@ namespace BombServer.Kernel
             this.componentDict.TryGetValue(type, out IComponent component);
             return component;
         }
+
     }
 }

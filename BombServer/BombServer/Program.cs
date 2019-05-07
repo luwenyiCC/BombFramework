@@ -14,6 +14,7 @@ namespace BombServer
             // 异步方法全部回调到主线程
             SynchronizationContext.SetSynchronizationContext(OneThreadSynchronizationContext.Instance);
             Game.Instance.AddComponent<TcpComponent>();
+            Game.Instance.AddComponent<EventSystem>();
 
             while (true)
             {

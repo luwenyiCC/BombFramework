@@ -24,23 +24,34 @@ namespace BombFramework {
     static GameReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgpHYW1lLnByb3RvEg1Cb21iRnJhbWV3b3JrIhIKBEdhbWUSCgoCSUQYASAB",
-            "KAVCEKoCDUJvbWJGcmFtZXdvcmtiBnByb3RvMw=="));
+            "CgpHYW1lLnByb3RvEg1Cb21iRnJhbWV3b3JrIjEKDEFjY1B3ZFJlcXVldBIP",
+            "CgdhY2NvdW50GAEgASgJEhAKCHBhc3N3b3JkGAIgASgJKiwKBU1TR0lEEggK",
+            "BE5vbmUQABIKCgVMb2dpbhDpBxINCghSZWdpc3RlchDqB0IQqgINQm9tYkZy",
+            "YW1ld29ya2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::BombFramework.Game), global::BombFramework.Game.Parser, new[]{ "ID" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::BombFramework.MSGID), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::BombFramework.AccPwdRequet), global::BombFramework.AccPwdRequet.Parser, new[]{ "Account", "Password" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum MSGID {
+    [pbr::OriginalName("None")] None = 0,
+    [pbr::OriginalName("Login")] Login = 1001,
+    [pbr::OriginalName("Register")] Register = 1002,
+  }
+
+  #endregion
+
   #region Messages
-  public sealed partial class Game : pb::IMessage<Game> {
-    private static readonly pb::MessageParser<Game> _parser = new pb::MessageParser<Game>(() => new Game());
+  public sealed partial class AccPwdRequet : pb::IMessage<AccPwdRequet> {
+    private static readonly pb::MessageParser<AccPwdRequet> _parser = new pb::MessageParser<AccPwdRequet>(() => new AccPwdRequet());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Game> Parser { get { return _parser; } }
+    public static pb::MessageParser<AccPwdRequet> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -53,55 +64,69 @@ namespace BombFramework {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Game() {
+    public AccPwdRequet() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Game(Game other) : this() {
-      iD_ = other.iD_;
+    public AccPwdRequet(AccPwdRequet other) : this() {
+      account_ = other.account_;
+      password_ = other.password_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Game Clone() {
-      return new Game(this);
+    public AccPwdRequet Clone() {
+      return new AccPwdRequet(this);
     }
 
-    /// <summary>Field number for the "ID" field.</summary>
-    public const int IDFieldNumber = 1;
-    private int iD_;
+    /// <summary>Field number for the "account" field.</summary>
+    public const int AccountFieldNumber = 1;
+    private string account_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ID {
-      get { return iD_; }
+    public string Account {
+      get { return account_; }
       set {
-        iD_ = value;
+        account_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "password" field.</summary>
+    public const int PasswordFieldNumber = 2;
+    private string password_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Password {
+      get { return password_; }
+      set {
+        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as Game);
+      return Equals(other as AccPwdRequet);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Game other) {
+    public bool Equals(AccPwdRequet other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ID != other.ID) return false;
+      if (Account != other.Account) return false;
+      if (Password != other.Password) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ID != 0) hash ^= ID.GetHashCode();
+      if (Account.Length != 0) hash ^= Account.GetHashCode();
+      if (Password.Length != 0) hash ^= Password.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -115,9 +140,13 @@ namespace BombFramework {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (ID != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ID);
+      if (Account.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Account);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Password);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -127,8 +156,11 @@ namespace BombFramework {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ID != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ID);
+      if (Account.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Account);
+      }
+      if (Password.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -137,12 +169,15 @@ namespace BombFramework {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Game other) {
+    public void MergeFrom(AccPwdRequet other) {
       if (other == null) {
         return;
       }
-      if (other.ID != 0) {
-        ID = other.ID;
+      if (other.Account.Length != 0) {
+        Account = other.Account;
+      }
+      if (other.Password.Length != 0) {
+        Password = other.Password;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -155,8 +190,12 @@ namespace BombFramework {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ID = input.ReadInt32();
+          case 10: {
+            Account = input.ReadString();
+            break;
+          }
+          case 18: {
+            Password = input.ReadString();
             break;
           }
         }

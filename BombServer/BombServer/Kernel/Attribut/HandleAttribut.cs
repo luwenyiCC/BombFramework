@@ -1,16 +1,10 @@
 ﻿using System;
-namespace BombServer.Kernel.Attribut
+namespace BombServer.Kernel
 {
-    [AttributeUsage(AttributeTargets.Class, Inherited = false)]//设置了定位参数和命名参数
-    public class NetHandleAttribut : Attribute
+    public abstract class HandleAttribut : Attribute
     {
+        protected int msgType;
 
-        public int msgType;
-        public NetHandleAttribut(int msgType)
-        {
-            this.msgType = msgType;
-
-        }
+        public  int MsgType { get => msgType;  }
     }
-
 }

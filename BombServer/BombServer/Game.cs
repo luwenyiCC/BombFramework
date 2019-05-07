@@ -1,6 +1,4 @@
-﻿
-using System;
-using BombServer.Kernel;
+﻿using BombServer.Kernel;
 
 namespace BombServer
 {

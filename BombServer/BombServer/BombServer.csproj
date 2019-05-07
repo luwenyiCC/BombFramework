@@ -24,5 +24,9 @@
     <Folder Include="Kernel\System\" />
     <Folder Include="Kernel\Attribut\" />
     <Folder Include="Kernel\ProtoTools\" />
+    <Folder Include="Demo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="protocol\RPC.cs" />
   </ItemGroup>
 </Project>
