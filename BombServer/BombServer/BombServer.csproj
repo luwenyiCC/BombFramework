@@ -9,6 +9,7 @@
     <PackageReference Include="Google.Protobuf" Version="3.7.0" />
     <PackageReference Include="Google.Protobuf.Tools" Version="3.7.0" />
     <PackageReference Include="AsyncNet.Tcp" Version="1.2.5" />
+    <PackageReference Include="MongoDB.Driver" Version="2.8.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Kernel\" />

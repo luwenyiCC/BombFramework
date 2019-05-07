@@ -24,12 +24,17 @@
         <State name="__root__">
           <Node name="BombServer" expanded="True">
             <Node name="BombServer" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="MongoDB.Driver" expanded="True">
+                    <Node name="MongoDB.Driver.Core" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Demo" expanded="True" />
               <Node name="Kernel" expanded="True">
                 <Node name="Abstract" expanded="True" />
-                <Node name="Attribut" expanded="True">
-                  <Node name="EventHandleAttribut.cs" selected="True" />
-                </Node>
+                <Node name="Attribut" expanded="True" />
                 <Node name="Interface" expanded="True" />
                 <Node name="System" expanded="True" />
                 <Node name="Thread" expanded="True" />
