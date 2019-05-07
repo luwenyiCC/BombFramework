@@ -1,7 +1,17 @@
 ﻿syntax = "proto3";
 package BombFramework;
 option csharp_namespace = "BombFramework";
-message Game 
+
+enum MSGID{
+	None=0;
+	Login=1001;
+	Register=1002;
+
+	
+}
+
+message AccPwdRequet
 {
-	int32 ID = 1;
+	 string account = 1;
+	 string password = 2;
 }
