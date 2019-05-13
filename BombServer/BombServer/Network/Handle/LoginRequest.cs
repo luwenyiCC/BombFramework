@@ -12,6 +12,7 @@ namespace BombServer.Network.Handle
         public override void Execute(byte[] _data)
         {
             Init(_data);
+            //MongoDB.Driver
             throw new NotImplementedException();
         }
     }

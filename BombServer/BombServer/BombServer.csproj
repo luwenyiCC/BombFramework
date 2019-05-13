@@ -26,6 +26,8 @@
     <Folder Include="Kernel\Attribut\" />
     <Folder Include="Kernel\ProtoTools\" />
     <Folder Include="Demo\" />
+    <Folder Include="Database\Mongo\Bean\" />
+    <Folder Include="Kernel\Helper\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="protocol\RPC.cs" />
