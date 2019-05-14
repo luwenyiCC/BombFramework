@@ -18,24 +18,23 @@
       <File FileName="BombServer/Kernel/Entity.cs" Line="52" Column="1" />
       <File FileName="BombServer/Kernel/Thread/OneThreadSynchronizationContext.cs" Line="20" Column="10" />
       <File FileName="BombServer/Kernel/Attribut/HandleAttribut.cs" Line="8" Column="16" />
-      <File FileName="BombServer/Database/Mongo/MongoDBTools.cs" Line="39" Column="31" />
-      <File FileName="BombServer/Database/Mongo/Bean/AccountInfo.cs" Line="7" Column="37" />
-      <File FileName="无可用源" />
-      <File FileName="BombServer/Database/Mongo/IDatabaseBean.cs" Line="4" Column="35" />
-      <File FileName="BombServer/Database/Mongo/DataBean.cs" Line="12" Column="21" />
+      <File FileName="BombServer/Database/Mongo/MongoDBTools.cs" Line="125" Column="44" />
+      <File FileName="BombServer/Database/Mongo/Bean/AccountInfo.cs" Line="16" Column="10" />
+      <File FileName="BombServer/Database/Mongo/IDatabaseBean.cs" Line="4" Column="22" />
+      <File FileName="BombServer/Database/Mongo/DataBean.cs" Line="8" Column="1" />
       <File FileName="BombServer/Kernel/Helper/IdGenerater.cs" Line="21" Column="38" />
       <File FileName="BombServer/Kernel/Helper/TimeHelper.cs" Line="18" Column="50" />
+      <File FileName="无可用源" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BombServer" expanded="True">
+          <Node name="BombServer" expanded="True" selected="True">
             <Node name="BombServer" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Database" expanded="True">
                 <Node name="Mongo" expanded="True">
                   <Node name="Bean" expanded="True" />
-                  <Node name="MongoDBTools.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="Demo" expanded="True" />
@@ -54,17 +53,21 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>T</Value>
+          <Value>new T();</Value>
+          <Value>typeof(T)</Value>
+          <Value>item .Key == typeof(T)</Value>
+          <Value>collection as IMongoCollection&lt;object &gt;</Value>
+          <Value>collection as object </Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/Database/Mongo/MongoDBTools.cs" relfile="BombServer/Database/Mongo/MongoDBTools.cs" line="40" column="1" />
-      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/Database/Mongo/MongoDBTools.cs" relfile="BombServer/Database/Mongo/MongoDBTools.cs" line="41" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.BombServer PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />

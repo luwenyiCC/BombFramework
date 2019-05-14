@@ -5,6 +5,7 @@ namespace BombServer.Database
 {
     public class DataBean : IDatabaseBean
     {
+
         public DataBean()
         {
             typeName = this.GetType().Name; ;

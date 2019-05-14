@@ -11,8 +11,9 @@ namespace BombServer.Database
         }
         [BsonId]
         public long aid;
-
+        [BsonRequired ]
         public string account;
+       // [BsonRepresentation ]
         public string password;
     }
 }
