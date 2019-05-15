@@ -9,9 +9,11 @@ namespace BombServer.Network.Handle
     {
 
 
-        public override void Execute(byte[] _data)
+        public override void Execute(byte[] _data,int offset,int len,long id)
         {
-            Init(_data);
+            Init(_data,offset ,len);
+            Debug.Log(id);
+            Debug.Log(data);
             //MongoDB.Driver
             throw new NotImplementedException();
         }

@@ -24,5 +24,11 @@ namespace BombServer.Kernel
             t.MergeFrom(buffer);
             return t;
         }
+        public static T ToProto<T>(byte[] buffer,int offset,int len) where T : IMessage, new()
+        {
+            T t = new T();
+            t.MergeFrom(buffer,offset ,len);
+            return t;
+        }
     }
 }

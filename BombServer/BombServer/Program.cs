@@ -14,12 +14,15 @@ namespace BombServer
             IdGenerater.AppId = 1;
             //哈哈哈
             // 异步方法全部回调到主线程
-            //SynchronizationContext.SetSynchronizationContext(OneThreadSynchronizationContext.Instance);
-            //Game.Instance.AddComponent<TcpComponent>();
-            //Game.Instance.AddComponent<EventSystem>();
-            MongoDBTools mongoDB = new MongoDBTools();
-            mongoDB.Connect();
-            mongoDB.Test();
+            SynchronizationContext.SetSynchronizationContext(OneThreadSynchronizationContext.Instance);
+            Game.Instance.AddComponent<TcpComponent>();
+            Game.Instance.AddComponent<EventSystem>();
+            {//test
+                //MongoDBTools mongoDB = new MongoDBTools();
+                //mongoDB.Connect();
+                //mongoDB.Test();
+
+            }
             while (true)
             {
                 Thread.Sleep(1);
