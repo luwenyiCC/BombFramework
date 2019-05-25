@@ -10,24 +10,29 @@ public class Demo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //TcpSession tcpSession = new TcpSession();
-        //tcpSession.Connect();
-        Game game = new Game();
-        game.ID = 1001;
-        byte[] bytes;
-        using (MemoryStream stream = new MemoryStream())
+        TcpSession tcpSession = new TcpSession();
+        tcpSession.Connect();
+        AccPwdRequet accPwdRequet = new AccPwdRequet
         {
+            Account = "3333",
+            Password = "1234"
+        };
+        byte[] bytes = ProtoTools.ToBuffer(accPwdRequet, (int)MSGID.Login);
+        Debug.Log(bytes);
+        
+        //using (MemoryStream stream = new MemoryStream())
+        //{
 
-            //var cos = new CodedOutputStream(stream);
-            // Save the person to a stream
-            game.WriteTo(stream);
+        //    //var cos = new CodedOutputStream(stream);
+        //    // Save the person to a stream
+        //    accPwdRequet.WriteTo(stream);
+
 
             
-
-            bytes = stream.ToArray();
-        }
-        Game game2 = Game.Parser.ParseFrom(bytes);
-        Debug.Log(game2);
+        //    bytes = stream.ToArray();
+        //}
+        //AccPwdRequet game2 = AccPwdRequet.Parser.ParseFrom(bytes);
+        //Debug.Log(game2);
     }
 
     // Update is called once per frame

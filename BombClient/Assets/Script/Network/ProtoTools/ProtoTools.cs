@@ -1,20 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Google.Protobuf;
 
 public class ProtoTools
 {
 
-    public static byte[] ToBuffer<T>(T t) where T : IMessage
+    public static byte[] ToBuffer<T>(T t,int cmd) where T : IMessage
     {
-        byte[] buffer = null;
+        byte[] data = null;
         using (MemoryStream stream = new MemoryStream())
         {
 
             t.WriteTo(stream);
-            buffer = stream.ToArray();
+            byte[] buffer = stream.ToArray();
+            int offset = 0;
+            int len = buffer.Length;
+            data = new byte[len + 8];
+            offset += Utils.Encode32(data, offset, len);
+            offset += Utils.Encode32(data, offset, cmd);
+            Array.Copy(buffer, 0, data, offset, len);
         }
-        return buffer;
+        return data;
     }
     public static T ToProto<T>(byte[] buffer) where T : IMessage, new()
     {

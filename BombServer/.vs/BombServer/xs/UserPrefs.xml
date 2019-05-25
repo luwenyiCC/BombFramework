@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{801E9B22-3860-41C2-8BB4-96A35CA88F73}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Network/Tcp/TcpComponent.cs">
     <Files>
-      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="26" Column="62" />
-      <File FileName="BombServer/Network/Handle/LoginRequest.cs" Line="12" Column="22" />
-      <File FileName="BombServer/Kernel/Interface/IHandle.cs" Line="11" Column="27" />
+      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="84" Column="54" />
+      <File FileName="BombServer/Network/Handle/LoginRequest.cs" Line="11" Column="1" />
+      <File FileName="BombServer/Kernel/Interface/IHandle.cs" Line="28" Column="70" />
       <File FileName="BombServer/Kernel/ProtoTools/ProtoTools.cs" Line="32" Column="10" />
-      <File FileName="BombServer/Utils/Utils.cs" Line="35" Column="6" />
+      <File FileName="BombServer/Utils/Utils.cs" Line="95" Column="1" />
       <File FileName="BombServer/Kernel/System/EventSystem.cs" Line="10" Column="1" />
       <File FileName="BombServer/Kernel/Attribut/HandleAttribut.cs" Line="8" Column="20" />
       <File FileName="BombServer/Kernel/Attribut/NetHandleAttribut.cs" Line="15" Column="39" />
@@ -39,6 +39,9 @@
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

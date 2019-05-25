@@ -73,20 +73,76 @@
     <Compile Include="Assets\Script\Network\Tcp\NewClass.cs" />
     <Compile Include="Assets\Script\Network\Tcp\TcpSession.cs" />
     <Compile Include="Assets\Script\Network\TcpComponent.cs" />
+    <Compile Include="Assets\Script\UI\NewClass.cs" />
+    <Compile Include="Assets\Script\Utils\Utils.cs" />
+    <Reference Include="Unity.Entities.Properties">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties.Codegen">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Properties.Codegen.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.StaticTypeRegistry">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.StaticTypeRegistry.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rendering.Hybrid">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -303,6 +359,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/PackageCache/com.unity.collections@0.0.9-preview.12/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
