@@ -9,6 +9,7 @@
       <File FileName="BombServer/Kernel/System/EventSystem.cs" Line="10" Column="1" />
       <File FileName="BombServer/Kernel/Attribut/HandleAttribut.cs" Line="8" Column="20" />
       <File FileName="BombServer/Kernel/Attribut/NetHandleAttribut.cs" Line="15" Column="39" />
+      <File FileName="BombServer/Kernel/Entity.cs" Line="39" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -39,9 +40,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

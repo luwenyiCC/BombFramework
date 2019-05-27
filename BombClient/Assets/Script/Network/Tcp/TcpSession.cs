@@ -70,9 +70,11 @@ public class TcpSession
         {
             byte[] buffer = new byte[NumOfBytesRead];
             Array.Copy(networkStream.buffer, 0, buffer, 0, NumOfBytesRead);
+
+
             //byte[] byteData = Encoding.ASCII.GetBytes(data);
 
-            string msg = Encoding.UTF8.GetString(buffer);
+            //string msg = Encoding.UTF8.GetString(buffer);
             //byte[] bytes = null;
             //using (MemoryStream stream = new MemoryStream())
             //{
@@ -84,12 +86,14 @@ public class TcpSession
             //    rpc.WriteTo(stream);
             //    bytes = stream.ToArray();
             //}
-            UnityEngine.Debug.Log(msg);
+            //UnityEngine.Debug.Log(msg);
             ns.BeginRead(networkStream.buffer, 0, networkStream.buffer.Length, new AsyncCallback(AsyncReadCallBack), networkStream);
         }
         else
         {
             //NOTE 连接关闭
+            UnityEngine.Debug.Log("连接关闭");
+
             ns.Close();
             networkStream.tcpClient.Close();
             ns = null;
