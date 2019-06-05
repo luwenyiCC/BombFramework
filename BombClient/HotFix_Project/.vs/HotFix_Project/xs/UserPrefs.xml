@@ -1,0 +1,33 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestJson.cs">
+    <Files>
+      <File FileName="TestDelegate.cs" Line="51" Column="27" />
+      <File FileName="TestInheritance.cs" Line="3" Column="1" />
+      <File FileName="TestCLRBinding.cs" Line="10" Column="35" />
+      <File FileName="TestCoroutine.cs" Line="11" Column="47" />
+      <File FileName="InstanceClass.cs" Line="1" Column="1" />
+      <File FileName="TestCLRRedirection.cs" Line="1" Column="1" />
+      <File FileName="TestMonoBehaviour.cs" Line="20" Column="20" />
+      <File FileName="TestJson.cs" Line="26" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HotFix_Project" expanded="True">
+            <Node name="HotFix_Project" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="TestJson.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{3620B0A1-741E-4705-D0A8-494D09D45DBB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Kernel/UI/NewMonoBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Kernel/UI/UILoader.cs">
     <Files>
       <File FileName="Assets/Script/Network/TcpComponent.cs" Line="9" Column="1" />
       <File FileName="Assets/Script/Network/Tcp/TcpSession.cs" Line="74" Column="1" />
@@ -16,34 +16,15 @@
       <File FileName="Assets/Script/Kernel/SystemEvent.cs" Line="17" Column="34" />
       <File FileName="Assets/Script/Kernel/Entity.cs" Line="4" Column="1" />
       <File FileName="Assets/Script/UI/Login/Login.cs" Line="10" Column="1" />
-      <File FileName="Assets/Script/Kernel/UI/UILoader.cs" Line="7" Column="1" />
-      <File FileName="Assets/Script/Kernel/UI/Interface/IEntiryForUI.cs" Line="2" Column="30" />
-      <File FileName="Assets/Script/Kernel/UI/NewMonoBehaviour.cs" Line="2" Column="27" />
+      <File FileName="Assets/Script/Kernel/UI/UILoader.cs" Line="4" Column="5" />
+      <File FileName="Assets/Script/Kernel/UI/Interface/IEntiryForUI.cs" Line="9" Column="2" />
+      <File FileName="Assets/Script/Kernel/UI/KeyObjectMap.cs" Line="66" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BombClient" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Script" expanded="True">
-                <Node name="Kernel" expanded="True">
-                  <Node name="Abstract" expanded="True" />
-                  <Node name="Interface" expanded="True" />
-                  <Node name="Thread" expanded="True" />
-                  <Node name="UI" expanded="True">
-                    <Node name="Interface" expanded="True" />
-                    <Node name="NewMonoBehaviour.cs" selected="True" />
-                  </Node>
-                </Node>
-                <Node name="Network" expanded="True">
-                  <Node name="ProtoTools" expanded="True" />
-                  <Node name="Tcp" expanded="True" />
-                </Node>
-                <Node name="UI" expanded="True">
-                  <Node name="Login" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
+            <Node name="Assets" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -51,7 +32,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="97c5fbf3-6d4a-4ed6-8657-77e0363a2617" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eb9e17fd-d522-4889-b07d-e939dfd29962" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Script/Demo.cs" relfile="Assets/Script/Demo.cs" line="21" column="25" />

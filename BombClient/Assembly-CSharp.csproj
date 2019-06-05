@@ -81,6 +81,12 @@
     <Compile Include="Assets\Script\Network\TcpComponent.cs" />
     <Compile Include="Assets\Script\UI\Login\Login.cs" />
     <Compile Include="Assets\Script\Utils\Utils.cs" />
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Entities.Properties">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
     </Reference>
@@ -114,11 +120,20 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rendering.Hybrid">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Hybrid">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
@@ -135,6 +150,12 @@
     <Reference Include="Unity.Transforms.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
@@ -147,32 +168,11 @@
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Transforms.Hybrid">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
