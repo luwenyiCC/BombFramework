@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotFixMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UI/Login/LoginEntiry.cs">
     <Files>
       <File FileName="TestDelegate.cs" Line="51" Column="27" />
       <File FileName="TestInheritance.cs" Line="36" Column="41" />
@@ -13,14 +13,19 @@
       <File FileName="TestProtocol.cs" Line="29" Column="1" />
       <File FileName="TestValueType.cs" Line="1" Column="1" />
       <File FileName="HotFixMain.cs" Line="20" Column="42" />
+      <File FileName="UI/LoginFactory.cs" Line="9" Column="1" />
+      <File FileName="UI/Login/LoginEntiry.cs" Line="24" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HotFix_Project" expanded="True">
             <Node name="HotFix_Project" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="HotFixMain.cs" selected="True" />
+              <Node name="UI" expanded="True">
+                <Node name="Login" expanded="True">
+                  <Node name="LoginEntiry.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

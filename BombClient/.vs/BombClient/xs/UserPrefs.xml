@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{3620B0A1-741E-4705-D0A8-494D09D45DBB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Kernel/UI/KeyObjectMap.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Network/ProtoTools/ProtoTools.cs">
     <Files>
       <File FileName="Assets/Script/Main.cs" Line="11" Column="53" />
       <File FileName="Assets/Script/Kernel/ILRuntime/ILRMain.cs" Line="69" Column="1" />
@@ -10,36 +10,42 @@
       <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/Runtime/Intepreter/ILIntepreter.cs" Line="4646" Column="74" />
       <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/CLR/TypeSystem/IType.cs" Line="10" Column="22" />
       <File FileName="Assets/Script/Network/TcpComponent.cs" Line="18" Column="31" />
-      <File FileName="Assets/Script/Demo.cs" Line="13" Column="43" />
+      <File FileName="Assets/Script/Demo.cs" Line="15" Column="21" />
       <File FileName="Assets/Script/Network/Tcp/TcpSession.cs" Line="7" Column="14" />
       <File FileName="Assets/Script/FlowPath/NewMonoBehaviour.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/FlowPath/FlowPathComponent.cs" Line="11" Column="1" />
       <File FileName="Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" Line="14" Column="38" />
-      <File FileName="Assets/Script/Kernel/SystemEvent.cs" Line="33" Column="1" />
+      <File FileName="Assets/Script/Kernel/SystemEvent.cs" Line="37" Column="32" />
       <File FileName="Assets/Script/Kernel/Interface/ISystem.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game.cs" Line="20" Column="20" />
-      <File FileName="Assets/Script/Kernel/System/Update_SystemEvent.cs" Line="6" Column="1" />
-      <File FileName="Assets/Script/Kernel/Entity.cs" Line="6" Column="32" />
-      <File FileName="Assets/Script/Kernel/Interface/IEntiry.cs" Line="6" Column="37" />
+      <File FileName="Assets/Script/Kernel/Entity.cs" Line="6" Column="28" />
+      <File FileName="Assets/Script/Kernel/Interface/IEntiry.cs" Line="9" Column="49" />
       <File FileName="Assets/Script/Kernel/Interface/IComponent.cs" Line="8" Column="24" />
       <File FileName="Assets/Script/Kernel/Abstract/Component.cs" Line="9" Column="10" />
       <File FileName="Assets/Script/Kernel/UI/Interface/IEntiryForUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Kernel/UI/KeyObjectMap.cs" Line="27" Column="26" />
+      <File FileName="Assets/Script/Kernel/UI/KeyObjectMap.cs" Line="43" Column="1" />
+      <File FileName="Assets/Script/Kernel/UI/UILoader.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Network/protocol/Game.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Utils/PathTools.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Network/ProtoTools/ProtoTools.cs" Line="9" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BombClient" expanded="True">
+          <Node name="BombClient" expanded="True" selected="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
                 <Node name="FlowPath" expanded="True" />
                 <Node name="Kernel" expanded="True">
+                  <Node name="Interface" expanded="True" />
                   <Node name="UI" expanded="True">
                     <Node name="Interface" expanded="True" />
-                    <Node name="KeyObjectMap.cs" selected="True" />
                   </Node>
                 </Node>
-                <Node name="Network" expanded="True" />
+                <Node name="Network" expanded="True">
+                  <Node name="protocol" expanded="True" />
+                  <Node name="ProtoTools" expanded="True" />
+                </Node>
                 <Node name="Utils" expanded="True" />
               </Node>
               <Node name="Third" expanded="True">
@@ -55,7 +61,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="40ec2549-d27b-4c73-9b26-16e9a2f241f8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="097ddeb5-34a0-46ba-a20d-f95083907eee" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="92" column="32" />

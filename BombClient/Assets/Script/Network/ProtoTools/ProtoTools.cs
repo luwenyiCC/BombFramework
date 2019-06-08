@@ -6,6 +6,11 @@ using Google.Protobuf;
 public class ProtoTools
 {
 
+    public static byte[] ToBuffer<T>(T t, BombFramework.MSGID cmd) where T : IMessage
+    {
+
+        return ToBuffer<T>(t,(int)cmd);
+    }
     public static byte[] ToBuffer<T>(T t,int cmd) where T : IMessage
     {
         byte[] data = null;
