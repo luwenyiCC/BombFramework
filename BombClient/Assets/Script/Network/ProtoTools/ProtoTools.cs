@@ -23,6 +23,17 @@ public class ProtoTools
         }
         return data;
     }
+    public static byte[] ToBuffer<T>(T t) where T : IMessage
+    {
+        byte[] data = null;
+        using (MemoryStream stream = new MemoryStream())
+        {
+
+            t.WriteTo(stream);
+            data = stream.ToArray();
+        }
+        return data;
+    }
     public static T ToProto<T>(byte[] buffer) where T : IMessage, new()
     {
         T t = new T();

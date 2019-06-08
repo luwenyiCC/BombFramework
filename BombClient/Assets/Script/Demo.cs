@@ -18,21 +18,22 @@ public class Demo : MonoBehaviour
             Password = "1234"
         };
         byte[] bytes = ProtoTools.ToBuffer(accPwdRequet, (int)MSGID.Login);
-        Debug.Log(bytes);
+        Debug.Log("bytes.Length="+bytes.Length);
         
-        //using (MemoryStream stream = new MemoryStream())
-        //{
+        using (MemoryStream stream = new MemoryStream())
+        {
 
-        //    //var cos = new CodedOutputStream(stream);
-        //    // Save the person to a stream
-        //    accPwdRequet.WriteTo(stream);
+            //var cos = new CodedOutputStream(stream);
+            // Save the person to a stream
+            accPwdRequet.WriteTo(stream);
 
 
             
-        //    bytes = stream.ToArray();
-        //}
-        //AccPwdRequet game2 = AccPwdRequet.Parser.ParseFrom(bytes);
-        //Debug.Log(game2);
+            bytes = stream.ToArray();
+        }
+        AccPwdRequet game2 = AccPwdRequet.Parser.ParseFrom(bytes);
+        Debug.Log("Account="+game2.Account);
+        Debug.Log("Password="+game2.Password);
     }
 
     // Update is called once per frame

@@ -35,6 +35,8 @@ namespace ILRuntime.Runtime.Generated
             DelegateDemo_Binding.Register(app);
             MyDelegateDemo_Binding.Register(app);
             System_Int32_Binding.Register(app);
+            BombFramework_AccPwdRequet_Binding.Register(app);
+            Google_Protobuf_MessageParser_1_AccPwdRequet_Binding.Register(app);
 
             ILRuntime.CLR.TypeSystem.CLRType __clrType = null;
         }

@@ -30,7 +30,7 @@ public class ILRuntimeCLRBinding
         //所有DLL内的类型的真实C#类型都是ILTypeInstance
         types.Add(typeof(List<ILRuntime.Runtime.Intepreter.ILTypeInstance>));
 
-        ILRuntime.Runtime.CLRBinding.BindingCodeGenerator.GenerateBindingCode(types, "Assets/ILRuntime/Generated");
+        ILRuntime.Runtime.CLRBinding.BindingCodeGenerator.GenerateBindingCode(types, "Assets/Third/ILRuntime1.4/ILRuntime/Generated");
 
     }
 
@@ -45,7 +45,7 @@ public class ILRuntimeCLRBinding
         }
         //Crossbind Adapter is needed to generate the correct binding code
         InitILRuntime(domain);
-        ILRuntime.Runtime.CLRBinding.BindingCodeGenerator.GenerateBindingCode(domain, "Assets/ILRuntime/Generated");
+        ILRuntime.Runtime.CLRBinding.BindingCodeGenerator.GenerateBindingCode(domain, "Assets/Third/ILRuntime1.4/ILRuntime/Generated");
     }
 
     static void InitILRuntime(ILRuntime.Runtime.Enviorment.AppDomain domain)

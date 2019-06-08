@@ -16,6 +16,8 @@ public class HelloWorld : MonoBehaviour
 
     IEnumerator LoadHotFixAssembly()
     {
+        Debug.Log("-LoadHotFixAssembly 1 -");
+
         //首先实例化ILRuntime的AppDomain，AppDomain是一个应用程序域，每个AppDomain都是一个独立的沙盒
         appdomain = new ILRuntime.Runtime.Enviorment.AppDomain();
         //正常项目中应该是自行从其他地方下载dll，或者打包在AssetBundle中读取，平时开发以及为了演示方便直接从StreammingAssets中读取，
@@ -28,33 +30,29 @@ public class HelloWorld : MonoBehaviour
 #else
         WWW www = new WWW("file:///" + Application.streamingAssetsPath + "/HotFix_Project.dll");
 #endif
-        while (!www.isDone)
-            yield return null;
+        Debug.Log("-LoadHotFixAssembly 2 -");
+
+        //while (!www.isDone)
+        //yield return null;
+        yield return www;
+        Debug.Log("-LoadHotFixAssembly 3 -");
+
         if (!string.IsNullOrEmpty(www.error))
             UnityEngine.Debug.LogError(www.error);
         byte[] dll = www.bytes;
         www.Dispose();
+        Debug.Log("-LoadHotFixAssembly 4 -");
 
-        //PDB文件是调试数据库，如需要在日志中显示报错的行号，则必须提供PDB文件，不过由于会额外耗用内存，正式发布时请将PDB去掉，下面LoadAssembly的时候pdb传null即可
-#if UNITY_ANDROID
-        www = new WWW(Application.streamingAssetsPath + "/HotFix_Project.pdb");
-#else
-        www = new WWW("file:///" + Application.streamingAssetsPath + "/HotFix_Project.pdb");
-#endif
-        while (!www.isDone)
-            yield return null;
-        if (!string.IsNullOrEmpty(www.error))
-            UnityEngine.Debug.LogError(www.error);
-        byte[] pdb = www.bytes;
+
         using (System.IO.MemoryStream fs = new MemoryStream(dll))
         {
             //using (System.IO.MemoryStream p = new MemoryStream(pdb))
             {
                 //appdomain.LoadAssembly(fs, p, new Mono.Cecil.Pdb.PdbReaderProvider());
-                appdomain.LoadAssembly(fs, null, new Mono.Cecil.Pdb.PdbReaderProvider());
+                appdomain.LoadAssembly(fs, null, null);
             }
         }
-
+        Debug.Log("-LoadAssembly end-");
         InitializeILRuntime();
         OnHotFixLoaded();
     }

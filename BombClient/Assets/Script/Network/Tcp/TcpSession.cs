@@ -25,7 +25,7 @@ public class TcpSession
         //tcp.Connect(iPEndPoint);
         tcpClient.BeginConnect(address, 12100, (ar) =>
         {
-            UnityEngine.Debug.Log("连接上服务器");
+            UnityEngine.Debug.Log("连接服务器");
             tcpClient = (TcpClient)ar.AsyncState;
             tcpClient.EndConnect(ar);
             {
