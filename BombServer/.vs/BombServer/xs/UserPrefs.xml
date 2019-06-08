@@ -1,15 +1,21 @@
 ﻿<Properties StartupConfiguration="{801E9B22-3860-41C2-8BB4-96A35CA88F73}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Network/Tcp/TcpComponent.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BombServer/Kernel/Interface/IEntiry.cs">
     <Files>
-      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="84" Column="54" />
+      <File FileName="BombServer/Network/Tcp/TcpComponent.cs" Line="13" Column="38" />
       <File FileName="BombServer/Network/Handle/LoginRequest.cs" Line="11" Column="1" />
       <File FileName="BombServer/Kernel/Interface/IHandle.cs" Line="28" Column="70" />
       <File FileName="BombServer/Kernel/ProtoTools/ProtoTools.cs" Line="32" Column="10" />
       <File FileName="BombServer/Utils/Utils.cs" Line="95" Column="1" />
-      <File FileName="BombServer/Kernel/System/EventSystem.cs" Line="10" Column="1" />
+      <File FileName="BombServer/Kernel/System/EventSystem.cs" Line="7" Column="18" />
       <File FileName="BombServer/Kernel/Attribut/HandleAttribut.cs" Line="8" Column="20" />
       <File FileName="BombServer/Kernel/Attribut/NetHandleAttribut.cs" Line="15" Column="39" />
-      <File FileName="BombServer/Kernel/Entity.cs" Line="39" Column="27" />
+      <File FileName="BombServer/Kernel/Entity.cs" Line="6" Column="30" />
+      <File FileName="BombServer/Game.cs" Line="7" Column="1" />
+      <File FileName="BombServer/Program.cs" Line="19" Column="45" />
+      <File FileName="BombServer/Kernel/Interface/IComponent.cs" Line="4" Column="22" />
+      <File FileName="BombServer/protocol/Game.cs" Line="1" Column="1" />
+      <File FileName="BombServer/Kernel/Abstract/Component.cs" Line="4" Column="27" />
+      <File FileName="BombServer/Kernel/Interface/IEntiry.cs" Line="9" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +29,9 @@
                 <Node name="Abstract" expanded="True" />
                 <Node name="Attribut" expanded="True" />
                 <Node name="Helper" expanded="True" />
-                <Node name="Interface" expanded="True" />
+                <Node name="Interface" expanded="True">
+                  <Node name="IEntiry.cs" selected="True" />
+                </Node>
                 <Node name="ProtoTools" expanded="True" />
                 <Node name="System" expanded="True" />
                 <Node name="Thread" expanded="True" />
@@ -31,9 +39,7 @@
               <Node name="Log" expanded="True" />
               <Node name="Network" expanded="True">
                 <Node name="Handle" expanded="True" />
-                <Node name="Tcp" expanded="True">
-                  <Node name="TcpComponent.cs" selected="True" />
-                </Node>
+                <Node name="Tcp" expanded="True" />
               </Node>
               <Node name="protocol" expanded="True" />
               <Node name="Utils" expanded="True" />

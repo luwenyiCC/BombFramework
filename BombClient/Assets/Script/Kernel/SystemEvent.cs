@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace BombServer.Kernel
 {
-    public class SystemEvent
+    public class SystemEvent :ISystem
     {
         private uint nextEventID = 0;
         public uint GetEventID()
@@ -21,6 +21,20 @@ namespace BombServer.Kernel
         public void RemoveAction(uint eventID, Action action)
         {
             eventMap[eventID] += action;
+        }
+        public void FireAction(uint eventID)
+        {
+            if (eventMap.ContainsKey(eventID))
+            {
+                eventMap[eventID]();
+
+            }
+        }
+
+        public static uint UPDATE = Game.Instance.systemEvent.GetEventID();
+        public void Update()
+        {
+            FireAction(UPDATE);
         }
     }
 

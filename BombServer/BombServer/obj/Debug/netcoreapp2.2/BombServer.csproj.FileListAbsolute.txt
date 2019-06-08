@@ -8,4 +8,3 @@
 /Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/bin/Debug/netcoreapp2.2/BombServer.pdb
 /Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/obj/Debug/netcoreapp2.2/BombServer.dll
 /Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/obj/Debug/netcoreapp2.2/BombServer.pdb
-/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombServer/BombServer/obj/Debug/netcoreapp2.2/BombServer.csprojAssemblyReference.cache

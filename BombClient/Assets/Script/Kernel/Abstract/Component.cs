@@ -5,6 +5,11 @@ namespace BombServer.Kernel
     {
         object parent;
 
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
         public object GetParent()
         {
             return parent;

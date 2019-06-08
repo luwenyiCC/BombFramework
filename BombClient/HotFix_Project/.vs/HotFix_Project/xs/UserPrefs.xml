@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TestProtocol.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotFixMain.cs">
     <Files>
       <File FileName="TestDelegate.cs" Line="51" Column="27" />
       <File FileName="TestInheritance.cs" Line="36" Column="41" />
@@ -12,14 +12,15 @@
       <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
       <File FileName="TestProtocol.cs" Line="29" Column="1" />
       <File FileName="TestValueType.cs" Line="1" Column="1" />
+      <File FileName="HotFixMain.cs" Line="20" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HotFix_Project" expanded="True">
-            <Node name="HotFix_Project" expanded="True" selected="True">
-              <Node name="References" expanded="True" />
+            <Node name="HotFix_Project" expanded="True">
               <Node name="Properties" expanded="True" />
+              <Node name="HotFixMain.cs" selected="True" />
             </Node>
           </Node>
         </State>

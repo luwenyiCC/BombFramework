@@ -6,7 +6,7 @@ namespace BombServer.Kernel
         IComponent AddComponent(IComponent component);
 
         K AddComponent<K>() where K : IComponent, new();
-        IComponent GddComponent<K>();
+        K GetComponent<K>();
 
     }
 }

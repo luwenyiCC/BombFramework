@@ -42,12 +42,12 @@ namespace BombServer.Kernel
             return component;
         }
 
-        public IComponent GddComponent<K>()
+        public K GetComponent<K>() where K : IComponent
         {
             Type type = typeof(K);
             //IComponent component;
             this.componentDict.TryGetValue(type, out IComponent component);
-            return component;
+            return (K)component;
         }
 
     }

@@ -63,8 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Demo.cs" />
+    <Compile Include="Assets\Script\FlowPath\FlowPathComponent.cs" />
+    <Compile Include="Assets\Script\FlowPath\NewMonoBehaviour.cs" />
+    <Compile Include="Assets\Script\Game.cs" />
     <Compile Include="Assets\Script\Kernel\Abstract\Component.cs" />
     <Compile Include="Assets\Script\Kernel\Entity.cs" />
+    <Compile Include="Assets\Script\Kernel\ILRuntime\ILRMain.cs" />
     <Compile Include="Assets\Script\Kernel\Interface\IComponent.cs" />
     <Compile Include="Assets\Script\Kernel\Interface\IEntiry.cs" />
     <Compile Include="Assets\Script\Kernel\Interface\ISystem.cs" />
@@ -73,6 +77,7 @@
     <Compile Include="Assets\Script\Kernel\UI\Interface\IEntiryForUI.cs" />
     <Compile Include="Assets\Script\Kernel\UI\KeyObjectMap.cs" />
     <Compile Include="Assets\Script\Kernel\UI\UILoader.cs" />
+    <Compile Include="Assets\Script\Main.cs" />
     <Compile Include="Assets\Script\Network\protocol\Game.cs" />
     <Compile Include="Assets\Script\Network\protocol\RPC.cs" />
     <Compile Include="Assets\Script\Network\ProtoTools\ProtoTools.cs" />
@@ -80,6 +85,7 @@
     <Compile Include="Assets\Script\Network\Tcp\TcpSession.cs" />
     <Compile Include="Assets\Script\Network\TcpComponent.cs" />
     <Compile Include="Assets\Script\UI\Login\Login.cs" />
+    <Compile Include="Assets\Script\Utils\PathTools.cs" />
     <Compile Include="Assets\Script\Utils\Utils.cs" />
     <Compile Include="Assets\Third\ILRuntime1.4\ILRuntime\CLR\Method\CLRMethod.cs" />
     <Compile Include="Assets\Third\ILRuntime1.4\ILRuntime\CLR\Method\ExceptionHandler.cs" />
@@ -365,6 +371,12 @@
     <Compile Include="Assets\Third\ILRuntime1.4\Scripts\Examples\11_ValueTypeBinding\Vector2Binder.cs" />
     <Compile Include="Assets\Third\ILRuntime1.4\Scripts\Examples\11_ValueTypeBinding\Vector3Binder.cs" />
     <Compile Include="Assets\Third\ILRuntime1.4\Scripts\Examples\12_Protocol\ProtocolDemo.cs" />
+    <Compile Include="Assets\Third\SequentialFSM\Demo\Demo.cs" />
+    <Compile Include="Assets\Third\SequentialFSM\Demo\Step1.cs" />
+    <Compile Include="Assets\Third\SequentialFSM\Demo\Step2.cs" />
+    <Compile Include="Assets\Third\SequentialFSM\Demo\Step3.cs" />
+    <Compile Include="Assets\Third\SequentialFSM\Script\IState.cs" />
+    <Compile Include="Assets\Third\SequentialFSM\Script\SequentialFSMControl.cs" />
     <None Include="Assets\Third\ILRuntime1.4\link.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -5,5 +5,6 @@ namespace BombServer.Kernel
     {
         Object GetParent();
         void SetParent(Object obj);
+        void Dispose();
     }
 }

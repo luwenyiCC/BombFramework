@@ -1,16 +1,30 @@
 ﻿<Properties StartupConfiguration="{3620B0A1-741E-4705-D0A8-494D09D45DBB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Kernel/UI/KeyObjectMap.cs">
     <Files>
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/12_Protocol/ProtocolDemo.cs" Line="70" Column="38" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" Line="105" Column="25" />
-      <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/Runtime/Enviorment/AppDomain.cs" Line="889" Column="31" />
-      <File FileName="Assets/Script/Demo.cs" Line="23" Column="8" />
-      <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/Runtime/Intepreter/ILIntepreter.cs" Line="3691" Column="56" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/04_Inheritance/Inheritance.cs" Line="101" Column="69" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/04_Inheritance/MyInheritance.cs" Line="1" Column="1" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/04_Inheritance/MyInheritanceAdapter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/Invocation.cs" Line="98" Column="32" />
-      <File FileName="Assets/Script/Network/ProtoTools/ProtoTools.cs" Line="26" Column="34" />
+      <File FileName="Assets/Script/Main.cs" Line="11" Column="53" />
+      <File FileName="Assets/Script/Kernel/ILRuntime/ILRMain.cs" Line="69" Column="1" />
+      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/12_Protocol/ProtocolDemo.cs" Line="60" Column="37" />
+      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/Invocation.cs" Line="84" Column="16" />
+      <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/CLR/Method/IMethod.cs" Line="9" Column="24" />
+      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" Line="92" Column="37" />
+      <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/Runtime/Intepreter/ILIntepreter.cs" Line="4646" Column="74" />
+      <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/CLR/TypeSystem/IType.cs" Line="10" Column="22" />
+      <File FileName="Assets/Script/Network/TcpComponent.cs" Line="18" Column="31" />
+      <File FileName="Assets/Script/Demo.cs" Line="13" Column="43" />
+      <File FileName="Assets/Script/Network/Tcp/TcpSession.cs" Line="7" Column="14" />
+      <File FileName="Assets/Script/FlowPath/NewMonoBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/FlowPath/FlowPathComponent.cs" Line="11" Column="1" />
+      <File FileName="Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" Line="14" Column="38" />
+      <File FileName="Assets/Script/Kernel/SystemEvent.cs" Line="33" Column="1" />
+      <File FileName="Assets/Script/Kernel/Interface/ISystem.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Game.cs" Line="20" Column="20" />
+      <File FileName="Assets/Script/Kernel/System/Update_SystemEvent.cs" Line="6" Column="1" />
+      <File FileName="Assets/Script/Kernel/Entity.cs" Line="6" Column="32" />
+      <File FileName="Assets/Script/Kernel/Interface/IEntiry.cs" Line="6" Column="37" />
+      <File FileName="Assets/Script/Kernel/Interface/IComponent.cs" Line="8" Column="24" />
+      <File FileName="Assets/Script/Kernel/Abstract/Component.cs" Line="9" Column="10" />
+      <File FileName="Assets/Script/Kernel/UI/Interface/IEntiryForUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Kernel/UI/KeyObjectMap.cs" Line="27" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,51 +32,36 @@
           <Node name="BombClient" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="Network" expanded="True">
-                  <Node name="protocol" expanded="True" />
-                  <Node name="ProtoTools" expanded="True" />
+                <Node name="FlowPath" expanded="True" />
+                <Node name="Kernel" expanded="True">
+                  <Node name="UI" expanded="True">
+                    <Node name="Interface" expanded="True" />
+                    <Node name="KeyObjectMap.cs" selected="True" />
+                  </Node>
                 </Node>
+                <Node name="Network" expanded="True" />
+                <Node name="Utils" expanded="True" />
               </Node>
               <Node name="Third" expanded="True">
-                <Node name="ILRuntime1.4" expanded="True">
-                  <Node name="ILRuntime" expanded="True">
-                    <Node name="Adapters" expanded="True">
-                      <Node name="Editor" expanded="True" />
-                    </Node>
-                    <Node name="Generated" expanded="True" />
-                    <Node name="Other" expanded="True" />
-                    <Node name="Reflection" expanded="True" />
-                    <Node name="Runtime" expanded="True">
-                      <Node name="Enviorment" expanded="True" />
-                      <Node name="Intepreter" expanded="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Scripts" expanded="True">
-                    <Node name="Examples" expanded="True">
-                      <Node name="01_HelloWorld" expanded="True" />
-                      <Node name="02_Invocation" expanded="True">
-                        <Node name="MyInvocation.cs" selected="True" />
-                      </Node>
-                      <Node name="04_Inheritance" expanded="True" />
-                      <Node name="12_Protocol" expanded="True" />
-                    </Node>
-                  </Node>
+                <Node name="SequentialFSM" expanded="True">
+                  <Node name="Script" expanded="True" />
                 </Node>
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="82dfb1c7-f403-4bad-8259-0e974d315e1c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="40ec2549-d27b-4c73-9b26-16e9a2f241f8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="92" column="32" />
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="66" column="1" />
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="83" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
