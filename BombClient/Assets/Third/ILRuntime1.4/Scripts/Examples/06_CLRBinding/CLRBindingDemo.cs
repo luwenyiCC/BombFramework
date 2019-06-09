@@ -78,7 +78,7 @@ public class CLRBindingDemo : MonoBehaviour
     void InitializeILRuntime()
     {
         //这里做一些ILRuntime的注册，这里应该写CLR绑定的注册，为了演示方便，这个例子写在OnHotFixLoaded了
-        ILRuntime.Runtime.Generated.CLRBindings.Initialize(appdomain);
+        //ILRuntime.Runtime.Generated.CLRBindings.Initialize(appdomain);
 
     }
 
@@ -110,7 +110,7 @@ public class CLRBindingDemo : MonoBehaviour
             //请在生成了绑定代码后解除下面这行的注释
             //请在生成了绑定代码后解除下面这行的注释
             //请在生成了绑定代码后解除下面这行的注释
-            ILRuntime.Runtime.Generated.CLRBindings.Initialize(appdomain);
+            //ILRuntime.Runtime.Generated.CLRBindings.Initialize(appdomain);
             //这个只是为了演示加的，平时不需要这么用，直接在InitializeILRuntime方法里面写CLR绑定注册就行了
           
 

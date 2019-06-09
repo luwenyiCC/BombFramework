@@ -18,6 +18,8 @@ namespace HotFix_Project
         public void Main(string str)
         {
             Debug.Log("热更新工程启动 str="+ str);
+            LoginEntiry loginEntiry = new LoginEntiry();
+            loginEntiry.Init("LoginPanel");
         }
     }
 }

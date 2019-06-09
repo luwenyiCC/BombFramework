@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using BombServer.Kernel;
 using ILRuntime.CLR.Method;
@@ -6,6 +7,7 @@ using ILRuntime.CLR.TypeSystem;
 using ILRuntime.Runtime.Enviorment;
 using UnityEngine;
 using Component = BombServer.Kernel.Component;
+using AppDomain = ILRuntime.Runtime.Enviorment.AppDomain;
 //using UnityEngine;
 
 public class ILRMain : Component
@@ -45,7 +47,14 @@ public class ILRMain : Component
     {
         //这里做一些ILRuntime的注册，这里应该写CLR绑定的注册，
         ILRuntime.Runtime.Generated.CLRBindings.Initialize(appDomain);
-
+        //unity 按钮事件
+        appDomain.DelegateManager.RegisterDelegateConvertor<UnityEngine.Events.UnityAction>((act) =>
+        {
+            return new UnityEngine.Events.UnityAction(() =>
+            {
+                ((Action<UnityEngine.Events.UnityAction>)act)();
+            });
+        });
     }
     void OnHotFixLoaded()
     {

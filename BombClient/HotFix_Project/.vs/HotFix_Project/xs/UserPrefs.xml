@@ -12,9 +12,9 @@
       <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
       <File FileName="TestProtocol.cs" Line="29" Column="1" />
       <File FileName="TestValueType.cs" Line="1" Column="1" />
-      <File FileName="HotFixMain.cs" Line="20" Column="42" />
+      <File FileName="HotFixMain.cs" Line="22" Column="27" />
       <File FileName="UI/LoginFactory.cs" Line="9" Column="1" />
-      <File FileName="UI/Login/LoginEntiry.cs" Line="24" Column="43" />
+      <File FileName="UI/Login/LoginEntiry.cs" Line="17" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

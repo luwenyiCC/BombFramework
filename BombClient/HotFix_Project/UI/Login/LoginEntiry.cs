@@ -3,8 +3,9 @@ using BombFramework;
 using BombServer.Kernel;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
-namespace HotFix_Project.UI.Login
+namespace HotFix_Project
 {
     public class LoginEntiry
     {
@@ -13,11 +14,14 @@ namespace HotFix_Project.UI.Login
         InputField password;
         public void Init(string path)
         {
-            GameObject go = Resources.Load(path) as GameObject;
+            GameObject loginPanel = Resources.Load<GameObject>(path);
+            GameObject go = Object.Instantiate(loginPanel) as GameObject;
+
             KeyObjectMap kom = go.GetComponent<KeyObjectMap>();
-            loginBtn = kom.Get<Button>("LoginBtn");
-            account = kom.Get<InputField>("Account");
-            password = kom.Get<InputField>("Password");
+
+            loginBtn = kom.Get<GameObject>("LoginBtn").GetComponent<Button>();
+            account = kom.Get<GameObject>("Account").GetComponent<InputField>();
+            password = kom.Get<GameObject>("Password").GetComponent<InputField>();
             loginBtn.onClick .AddListener(() => {
 
                 Debug.Log("loginBtn.onClick ");

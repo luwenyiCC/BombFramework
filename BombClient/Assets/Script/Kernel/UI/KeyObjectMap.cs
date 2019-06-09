@@ -39,7 +39,13 @@ namespace BombServer.Kernel
         /// </summary>
         public void OnBeforeSerialize()
         {
-            //Debug.Log("OnBeforeSerialize");
+            foreach (KeyObjectData item in data)
+            {
+                if (item.gameObject != null & string.IsNullOrEmpty(item.key))
+                {
+                    item.key =  item.gameObject.name;
+                }
+            }
 
         }
 

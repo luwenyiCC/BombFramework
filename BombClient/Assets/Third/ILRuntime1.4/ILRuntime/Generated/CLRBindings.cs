@@ -37,6 +37,17 @@ namespace ILRuntime.Runtime.Generated
             System_Int32_Binding.Register(app);
             BombFramework_AccPwdRequet_Binding.Register(app);
             Google_Protobuf_MessageParser_1_AccPwdRequet_Binding.Register(app);
+            UnityEngine_Resources_Binding.Register(app);
+            UnityEngine_Object_Binding.Register(app);
+            BombServer_Kernel_KeyObjectMap_Binding.Register(app);
+            UnityEngine_UI_Button_Binding.Register(app);
+            UnityEngine_Events_UnityEvent_Binding.Register(app);
+            UnityEngine_UI_InputField_Binding.Register(app);
+            Game_Binding.Register(app);
+            BombServer_Kernel_Entity_Binding.Register(app);
+            TcpComponent_Binding.Register(app);
+            ProtoTools_Binding.Register(app);
+            TcpSession_Binding.Register(app);
 
             ILRuntime.CLR.TypeSystem.CLRType __clrType = null;
         }

@@ -9,6 +9,7 @@ public class Main : MonoBehaviour
     void Start()
     {
         //Game.Instance.AddComponent<SystemEvent>();
+        Game.Instance.AddComponent<LoadABComponent>();
         Game.Instance.AddComponent<ILRMain>();
         Game.Instance.AddComponent<TcpComponent>();
     }
