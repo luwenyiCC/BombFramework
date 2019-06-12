@@ -46,22 +46,30 @@ public class ILRMain : Component
     void InitializeILRuntime()
     {
         //这里做一些ILRuntime的注册，这里应该写CLR绑定的注册，
-        ILRuntime.Runtime.Generated.CLRBindings.Initialize(appDomain);
+        //ILRuntime.Runtime.Generated.CLRBindings.Initialize(appDomain);
         //unity 按钮事件
         appDomain.DelegateManager.RegisterDelegateConvertor<UnityEngine.Events.UnityAction>((act) =>
         {
             return new UnityEngine.Events.UnityAction(() =>
             {
-                ((Action<UnityEngine.Events.UnityAction>)act)();
+                ((Action)act)();
             });
         });
+
+        //appDomain.RegisterCrossBindingAdaptor(new EntiryAdaptor());
+        appDomain.RegisterCrossBindingAdaptor(new SequentialFSMIStateAdaptor());
+        ILRuntime.Runtime.Generated.CLRBindings.Initialize(appDomain);
+
     }
+    IMethod M_Update;
+    object instance;
     void OnHotFixLoaded()
     {
         ///*
         IType itype = appDomain.LoadedTypes["HotFix_Project.HotFixMain"];
-        object instance = ((ILType)itype).Instantiate();
+        instance = ((ILType)itype).Instantiate();
         IMethod method = itype.GetMethod("Main", 1);
+        M_Update = itype.GetMethod("Update", 1);
         //参数类型列表
         //List<IType> paramList = new List<IType>
         //{
@@ -78,5 +86,9 @@ public class ILRMain : Component
 
 
     }
+    public void Update(float deltaTime)
+    {
+        appDomain.Invoke(M_Update, instance, deltaTime);
 
+    }
 }

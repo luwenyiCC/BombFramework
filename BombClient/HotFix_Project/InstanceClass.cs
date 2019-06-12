@@ -40,5 +40,15 @@ namespace HotFix_Project
         {
             UnityEngine.Debug.Log("!!! InstanceClass.GenericMethod(), a=" + a);
         }
+
+        public static void GenericMethod2<T>()
+        {
+            UnityEngine.Debug.Log("!!! InstanceClass.GenericMethod()2, t=" + typeof(T));
+        }
+
+        public void GenericMethod3<T>()
+        {
+            UnityEngine.Debug.Log("!!! InstanceClass.GenericMethod()3, t=" + typeof(T));
+        }
     }
 }

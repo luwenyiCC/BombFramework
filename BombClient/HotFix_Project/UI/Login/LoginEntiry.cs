@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using BombFramework;
 using BombServer.Kernel;
 using UnityEngine;
@@ -14,9 +14,13 @@ namespace HotFix_Project
         InputField password;
         public void Init(string path)
         {
+            Debug.Log("Init "+path);
             GameObject loginPanel = Resources.Load<GameObject>(path);
             GameObject go = Object.Instantiate(loginPanel) as GameObject;
-
+            Transform tf = go.transform;
+            UIRoot uiRoot = HotFixGame.Instance.GetComponent<UIRoot>();
+            tf.SetParent(uiRoot.canvasTF);
+            tf.localPosition = Vector3.zero;
             KeyObjectMap kom = go.GetComponent<KeyObjectMap>();
 
             loginBtn = kom.Get<GameObject>("LoginBtn").GetComponent<Button>();

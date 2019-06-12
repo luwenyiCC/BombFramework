@@ -69,10 +69,22 @@
     <Compile Include="HotFixMain.cs" />
     <Compile Include="UI\LoginFactory.cs" />
     <Compile Include="UI\Login\LoginEntiry.cs" />
+    <Compile Include="UI\UIRoot.cs" />
+    <Compile Include="Kernel\HotFixGame.cs" />
+    <Compile Include="FlowPath\FlowPathComponent.cs" />
+    <Compile Include="FlowPath\State\UIStartState.cs" />
+    <Compile Include="Kernel\Entiry.cs" />
+    <Compile Include="Kernel\Component.cs" />
+    <Compile Include="Kernel\Interface\IComponent.cs" />
+    <Compile Include="Kernel\Interface\IEntiry.cs" />
+    <Compile Include="Kernel\Interface\ISystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UI\" />
     <Folder Include="UI\Login\" />
+    <Folder Include="Kernel\" />
+    <Folder Include="FlowPath\" />
+    <Folder Include="FlowPath\State\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

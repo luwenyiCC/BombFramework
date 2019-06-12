@@ -5,11 +5,9 @@ namespace BombServer.Kernel
 {
     public class Entity : IEntiry
     {
-        public Entity()
-        {
-        }
+
         private Dictionary<Type, IComponent> componentDict = new Dictionary<Type, IComponent>();
-        public IComponent AddComponent(IComponent component)
+        public virtual IComponent AddComponent(IComponent component)
         {
             Type type = component.GetType();
             if (this.componentDict.ContainsKey(type))
@@ -42,7 +40,7 @@ namespace BombServer.Kernel
             return component;
         }
 
-        public K GetComponent<K>() where K : IComponent
+        public virtual K GetComponent<K>() where K : IComponent
         {
             Type type = typeof(K);
             //IComponent component;

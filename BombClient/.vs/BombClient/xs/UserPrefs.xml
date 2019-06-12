@@ -1,23 +1,29 @@
 ﻿<Properties StartupConfiguration="{3620B0A1-741E-4705-D0A8-494D09D45DBB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Kernel/ILRuntime/ILRMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Kernel/ILRuntime/Adapter/SequentialFSMIStateAdaptor.cs">
     <Files>
-      <File FileName="Assets/Script/Main.cs" Line="12" Column="41" />
-      <File FileName="Assets/Script/Game.cs" Line="20" Column="20" />
-      <File FileName="Assets/Script/Kernel/ILRuntime/ILRMain.cs" Line="55" Column="65" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/06_CLRBinding/CLRBindingDemo.cs" Line="81" Column="73" />
-      <File FileName="Assets/Script/Kernel/Loader/LoadABComponent.cs" Line="12" Column="19" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/03_Delegate/MyDelegateDemo.cs" Line="57" Column="29" />
-      <File FileName="Assets/Third/ILRuntime1.4/Scripts/Examples/03_Delegate/DelegateDemo.cs" Line="134" Column="79" />
+      <File FileName="Assets/Script/Kernel/ILRuntime/ILRMain.cs" Line="91" Column="49" />
+      <File FileName="Assets/Script/Kernel/Entity.cs" Line="29" Column="26" />
+      <File FileName="Assets/Script/Kernel/SystemEvent.cs" Line="29" Column="37" />
+      <File FileName="Assets/Third/ILRuntime1.4/ILRuntime/Generated/CLRBindings.cs" Line="15" Column="29" />
+      <File FileName="Assets/Script/Main.cs" Line="22" Column="21" />
+      <File FileName="Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" Line="42" Column="30" />
+      <File FileName="Assets/Third/SequentialFSM/Script/IState.cs" Line="12" Column="17" />
+      <File FileName="Assets/Script/Kernel/ILRuntime/Adapter/SequentialFSMIStateAdaptor.cs" Line="50" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BombClient" expanded="True" selected="True">
+          <Node name="BombClient" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
                 <Node name="Kernel" expanded="True">
-                  <Node name="ILRuntime" expanded="True" />
-                  <Node name="Loader" expanded="True" />
+                  <Node name="Abstract" expanded="True" />
+                  <Node name="ILRuntime" expanded="True">
+                    <Node name="Adapter" expanded="True">
+                      <Node name="SequentialFSMIStateAdaptor.cs" selected="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Interface" expanded="True" />
                   <Node name="UI" expanded="True" />
                 </Node>
                 <Node name="Network" expanded="True" />
@@ -25,19 +31,34 @@
               <Node name="Third" expanded="True">
                 <Node name="ILRuntime1.4" expanded="True">
                   <Node name="ILRuntime" expanded="True">
+                    <Node name="Adapters" expanded="True">
+                      <Node name="Editor" expanded="True" />
+                    </Node>
                     <Node name="Generated" expanded="True" />
                     <Node name="Runtime" expanded="True">
-                      <Node name="Intepreter" expanded="True" />
+                      <Node name="Adaptors" expanded="True" />
+                      <Node name="Debugger" expanded="True" />
+                      <Node name="Enviorment" expanded="True" />
                     </Node>
                   </Node>
+                  <Node name="LitJson" expanded="True" />
+                  <Node name="Mono.Cecil.20" expanded="True" />
+                  <Node name="Mono.Cecil.Pdb" expanded="True" />
                   <Node name="Scripts" expanded="True">
                     <Node name="Examples" expanded="True">
+                      <Node name="02_Invocation" expanded="True" />
                       <Node name="03_Delegate" expanded="True" />
                       <Node name="06_CLRBinding" expanded="True" />
+                      <Node name="08_MonoBehaviour" expanded="True">
+                        <Node name="Editor" expanded="True" />
+                      </Node>
                     </Node>
                   </Node>
                 </Node>
-                <Node name="SequentialFSM" expanded="True" />
+                <Node name="SequentialFSM" expanded="True">
+                  <Node name="Demo" expanded="True" />
+                  <Node name="Script" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -45,15 +66,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="01f8845a-38d6-4d02-8ad1-3d164f7a111f" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6fd8a8fd-7b50-47b6-8791-1b0e6a848f1c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e2645f74-f99f-4f40-96fb-8c62f593ede3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="92" column="32" />
-      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="66" column="1" />
-      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" relfile="Assets/Third/ILRuntime1.4/Scripts/Examples/02_Invocation/MyInvocation.cs" line="83" column="1" />
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" relfile="Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" line="25" column="21" />
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" relfile="Assets/Third/SequentialFSM/Script/SequentialFSMControl.cs" line="37" column="1" />
+      <Breakpoint file="/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/Script/Kernel/ILRuntime/Adapter/SequentialFSMIStateAdaptor.cs" relfile="Assets/Script/Kernel/ILRuntime/Adapter/SequentialFSMIStateAdaptor.cs" line="50" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

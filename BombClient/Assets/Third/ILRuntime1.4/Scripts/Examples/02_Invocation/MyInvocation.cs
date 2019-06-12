@@ -9,6 +9,7 @@ using System;
 using AppDomain = ILRuntime.Runtime.Enviorment.AppDomain;
 using ILRuntime.CLR.TypeSystem;
 using ILRuntime.CLR.Method;
+using ILRuntime.Runtime.Intepreter;
 
 public class MyInvocation : MonoBehaviour
 {
@@ -80,7 +81,7 @@ public class MyInvocation : MonoBehaviour
         Debug.Log("实例化热更里的类");
         //第一种方式
 
-        object obj = appdomain.Instantiate("HotFix_Project.InstanceClass", new object[] { 111 });
+        ILTypeInstance obj = appdomain.Instantiate("HotFix_Project.InstanceClass", new object[] { 111 });
         //第二种方式
         object obj2 = ((ILType)type).Instantiate();
         Debug.Log("调用成员方法");
@@ -104,6 +105,15 @@ public class MyInvocation : MonoBehaviour
         method = type.GetMethod("GenericMethod", paramList, genericArguments);
         appdomain.Invoke(method,obj,300);
 
+        Debug.Log("获取泛型方法的IMethod 2");
+        genericArguments = new IType[] { intType };
+        method = type.GetMethod("GenericMethod2", null, genericArguments);
+        appdomain.Invoke(method, obj, null);
+
+        Debug.Log("获取泛型方法的IMethod 3");
+        genericArguments = new IType[] { intType };
+        method = obj.Type.GetMethod("GenericMethod3", null, genericArguments);
+        appdomain.Invoke(method, obj, null);
     }
 
     void InitializeILRuntime()
