@@ -13,6 +13,9 @@ public class Main : MonoBehaviour
         Game.Instance.AddComponent<LoadABComponent>();
         ilrMain = Game.Instance.AddComponent<ILRMain>();
         Game.Instance.AddComponent<TcpComponent>();
+
+
+        
     }
 
     // Update is called once per frame

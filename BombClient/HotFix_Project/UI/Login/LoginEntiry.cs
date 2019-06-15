@@ -15,7 +15,13 @@ namespace HotFix_Project
         public void Init(string path)
         {
             Debug.Log("Init "+path);
-            GameObject loginPanel = Resources.Load(path) as GameObject;
+            GameObject loginPanel = null;
+
+            
+            AssetBundle ab = AssetBundle.LoadFromFile(Application.streamingAssetsPath+"/"+ path.ToLower());
+            loginPanel = ab.LoadAsset<GameObject>(path.ToLower());
+
+            //GameObject loginPanel = Resources.Load(path) as GameObject;
             GameObject go = Object.Instantiate(loginPanel) as GameObject;
             Transform tf = go.transform;
             UIRoot uiRoot = HotFixGame.Instance.GetComponent<UIRoot>();
@@ -23,15 +29,16 @@ namespace HotFix_Project
             tf.localPosition = Vector3.zero;
             KeyObjectMap kom = go.GetComponent<KeyObjectMap>();
 
-            loginBtn = kom.Get<GameObject>("LoginBtn").GetComponent<Button>();
+            
+            loginBtn = kom.Get<GameObject>("Login").GetComponent<Button>();
             account = kom.Get<GameObject>("Account").GetComponent<InputField>();
             password = kom.Get<GameObject>("Password").GetComponent<InputField>();
             loginBtn.onClick .AddListener(() => {
 
-                Debug.Log("loginBtn.onClick ");
-                string acc = account.text;
-                string pwd = password.text;
-                Game.Instance.GetComponent<TcpComponent>().Session.Send(ProtoTools.ToBuffer(new AccPwdRequet { Account = acc, Password = pwd }, MSGID.Login));
+                Debug.Log("Login.onClick ");
+                //string acc = account.text;
+                //string pwd = password.text;
+                //Game.Instance.GetComponent<TcpComponent>().Session.Send(ProtoTools.ToBuffer(new AccPwdRequet { Account = acc, Password = pwd }, MSGID.Login));
             }   );
         }
        

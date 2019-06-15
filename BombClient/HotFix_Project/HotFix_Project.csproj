@@ -14,18 +14,23 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Assets\StreamingAssets</OutputPath>
+    <OutputPath>..\MainProject\Assets\StreamingAssets</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>4</LangVersion>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
-    <OutputPath>..\Assets\StreamingAssets</OutputPath>
+    <OutputPath>..\MainProject\Assets\StreamingAssets</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -38,9 +43,6 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\..\..\Volumes\SDCard\unity2019\DLL\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
@@ -50,8 +52,14 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\..\..\..\..\..\..\Volumes\SDCard\unity2019\DLL\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\MainProject\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>..\Assets\Third\Google.Protobuf.dll</HintPath>
+      <HintPath>..\MainProject\Assets\Third\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\..\..\..\Volumes\SDCard\unity2019\DLL\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

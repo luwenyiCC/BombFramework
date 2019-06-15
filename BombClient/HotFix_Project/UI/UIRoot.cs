@@ -10,8 +10,10 @@ namespace HotFix_Project
         public GameObject canvasGO;
         public UIRoot()
         {
+            Debug.Log("UIRoot Instance" );
+
             GameObject go = Resources.Load<GameObject>("Canvas");
-            //Debug.Log("Canvas = "+go.name);
+            Debug.Log("Canvas = "+go.name);
             canvasGO = Object.Instantiate(go) as GameObject;
             //Debug.Log("canvasGO = " + canvasGO.name);
 

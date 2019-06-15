@@ -5,9 +5,8 @@
 /Users/luwenyi/Work/ILRuntimeU3D-master/HotFix_Project/obj/Debug/HotFix_Project.csproj.CopyComplete
 /Users/luwenyi/Work/ILRuntimeU3D-master/HotFix_Project/obj/Debug/HotFix_Project.dll
 /Users/luwenyi/Work/ILRuntimeU3D-master/HotFix_Project/obj/Debug/HotFix_Project.pdb
-/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/StreamingAssets/HotFix_Project.dll
-/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/Assets/StreamingAssets/HotFix_Project.pdb
-/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/HotFix_Project/obj/Debug/HotFix_Project.csprojAssemblyReference.cache
+/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/MainProject/Assets/StreamingAssets/HotFix_Project.dll
+/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/MainProject/Assets/StreamingAssets/HotFix_Project.pdb
 /Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/HotFix_Project/obj/Debug/HotFix_Project.csproj.CoreCompileInputs.cache
 /Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/HotFix_Project/obj/Debug/HotFix_Project.csproj.CopyComplete
 /Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/HotFix_Project/obj/Debug/HotFix_Project.dll

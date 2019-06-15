@@ -26,14 +26,6 @@ namespace ILRuntime.Runtime.Generated
             app.RegisterCLRMethodRedirection(method, DoSomeTest_0);
 
 
-
-            app.RegisterCLRCreateDefaultInstance(type, () => new CLRBindingTestClass());
-            app.RegisterCLRCreateArrayInstance(type, s => new CLRBindingTestClass[s]);
-
-            args = new Type[]{};
-            method = type.GetConstructor(flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, Ctor_0);
-
         }
 
 
@@ -57,18 +49,6 @@ namespace ILRuntime.Runtime.Generated
             return __ret + 1;
         }
 
-
-
-
-        static StackObject* Ctor_0(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
-        {
-            ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
-            StackObject* __ret = ILIntepreter.Minus(__esp, 0);
-
-            var result_of_this_method = new CLRBindingTestClass();
-
-            return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
-        }
 
 
     }
