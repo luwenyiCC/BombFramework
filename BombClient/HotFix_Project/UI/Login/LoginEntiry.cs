@@ -15,7 +15,7 @@ namespace HotFix_Project
         public void Init(string path)
         {
             Debug.Log("Init "+path);
-            GameObject loginPanel = Resources.Load<GameObject>(path);
+            GameObject loginPanel = Resources.Load(path) as GameObject;
             GameObject go = Object.Instantiate(loginPanel) as GameObject;
             Transform tf = go.transform;
             UIRoot uiRoot = HotFixGame.Instance.GetComponent<UIRoot>();

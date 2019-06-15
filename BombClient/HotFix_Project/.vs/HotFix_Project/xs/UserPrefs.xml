@@ -1,34 +1,34 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="FlowPath/State/UIStartState.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UI/Login/LoginEntiry.cs">
     <Files>
       <File FileName="TestDelegate.cs" Line="51" Column="27" />
-      <File FileName="TestInheritance.cs" Line="36" Column="41" />
-      <File FileName="TestCLRBinding.cs" Line="10" Column="35" />
-      <File FileName="TestCoroutine.cs" Line="11" Column="47" />
-      <File FileName="InstanceClass.cs" Line="49" Column="40" />
-      <File FileName="TestCLRRedirection.cs" Line="1" Column="1" />
-      <File FileName="TestMonoBehaviour.cs" Line="20" Column="20" />
-      <File FileName="TestJson.cs" Line="34" Column="10" />
-      <File FileName="Properties/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="TestProtocol.cs" Line="29" Column="1" />
-      <File FileName="TestValueType.cs" Line="1" Column="1" />
-      <File FileName="HotFixMain.cs" Line="53" Column="32" />
-      <File FileName="UI/LoginFactory.cs" Line="9" Column="1" />
-      <File FileName="UI/Login/LoginEntiry.cs" Line="18" Column="27" />
-      <File FileName="UI/UIRoot.cs" Line="18" Column="21" />
-      <File FileName="Kernel/HotFixGame.cs" Line="15" Column="37" />
-      <File FileName="FlowPath/FlowPathComponent.cs" Line="8" Column="18" />
-      <File FileName="FlowPath/State/UIStartState.cs" Line="31" Column="21" />
-      <File FileName="Kernel/Entiry.cs" Line="29" Column="38" />
-      <File FileName="Kernel/Component.cs" Line="6" Column="27" />
-      <File FileName="Kernel/Interface/IComponent.cs" Line="2" Column="25" />
-      <File FileName="Kernel/Interface/ISystem.cs" Line="2" Column="25" />
-      <File FileName="Kernel/Interface/IEntiry.cs" Line="2" Column="1" />
+      <File FileName="TestInheritance.cs" />
+      <File FileName="TestCLRBinding.cs" />
+      <File FileName="TestCoroutine.cs" />
+      <File FileName="InstanceClass.cs" />
+      <File FileName="TestCLRRedirection.cs" />
+      <File FileName="TestMonoBehaviour.cs" />
+      <File FileName="TestJson.cs" />
+      <File FileName="Properties/AssemblyInfo.cs" />
+      <File FileName="TestProtocol.cs" />
+      <File FileName="TestValueType.cs" />
+      <File FileName="HotFixMain.cs" />
+      <File FileName="UI/LoginFactory.cs" />
+      <File FileName="UI/Login/LoginEntiry.cs" Line="18" Column="51" />
+      <File FileName="UI/UIRoot.cs" />
+      <File FileName="Kernel/HotFixGame.cs" />
+      <File FileName="FlowPath/FlowPathComponent.cs" />
+      <File FileName="FlowPath/State/UIStartState.cs" />
+      <File FileName="Kernel/Entiry.cs" />
+      <File FileName="Kernel/Component.cs" />
+      <File FileName="Kernel/Interface/IComponent.cs" />
+      <File FileName="Kernel/Interface/ISystem.cs" />
+      <File FileName="Kernel/Interface/IEntiry.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HotFix_Project" expanded="True" selected="True">
+          <Node name="HotFix_Project" expanded="True">
             <Node name="HotFix_Project" expanded="True">
               <Node name="FlowPath" expanded="True">
                 <Node name="State" expanded="True" />
@@ -37,7 +37,9 @@
                 <Node name="Interface" expanded="True" />
               </Node>
               <Node name="UI" expanded="True">
-                <Node name="Login" expanded="True" />
+                <Node name="Login" expanded="True">
+                  <Node name="LoginEntiry.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -4,3 +4,9 @@ BombClient/Library/
 BombClient/Temp/
 
 BombClient/Logs/
+
+BombClient/MainProject/Library/
+
+BombClient/MainProject/Logs/
+
+BombClient/MainProject/Temp/
