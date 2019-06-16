@@ -15,7 +15,7 @@
       <File FileName="HotFixMain.cs" />
       <File FileName="UI/LoginFactory.cs" />
       <File FileName="UI/Login/LoginEntiry.cs" Line="38" Column="33" />
-      <File FileName="UI/UIRoot.cs" Line="16" Column="13" />
+      <File FileName="UI/UIRoot.cs" />
       <File FileName="Kernel/HotFixGame.cs" />
       <File FileName="FlowPath/FlowPathComponent.cs" />
       <File FileName="FlowPath/State/UIStartState.cs" />
@@ -28,9 +28,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HotFix_Project" expanded="True">
+          <Node name="HotFix_Project" expanded="True" selected="True">
             <Node name="HotFix_Project" expanded="True">
-              <Node name="References" expanded="True" />
               <Node name="FlowPath" expanded="True">
                 <Node name="State" expanded="True" />
               </Node>
@@ -38,9 +37,7 @@
                 <Node name="Interface" expanded="True" />
               </Node>
               <Node name="UI" expanded="True">
-                <Node name="Login" expanded="True">
-                  <Node name="LoginEntiry.cs" selected="True" />
-                </Node>
+                <Node name="Login" expanded="True" />
               </Node>
             </Node>
           </Node>

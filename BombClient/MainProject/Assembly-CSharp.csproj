@@ -396,6 +396,7 @@
     <Compile Include="Assets\Third\SequentialFSM\Demo\Step3.cs" />
     <Compile Include="Assets\Third\SequentialFSM\Script\IState.cs" />
     <Compile Include="Assets\Third\SequentialFSM\Script\SequentialFSMControl.cs" />
+    <None Include="Assets\Third\SimpleTown\Changelog.txt" />
     <None Include="Assets\link.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/luwenyi/Work/GitHub/NetCore/BombFramework/BombClient/MainProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
