@@ -21,7 +21,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
-  m_AmbientEquatorColor: {r: 0, g: 0.5876398, b: 1, a: 1}
+  m_AmbientEquatorColor: {r: 0.9669811, g: 0.986404, b: 1, a: 1}
   m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2054665026}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44629383, g: 0.4960935, b: 0.57464, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 89ab3d52829b748f5845d0621c9d8215,
+    type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
@@ -194,6 +195,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 471d45b220915504f893693209abc57d, type: 3}
       propertyPath: m_Name
       value: tree_medium_mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 471d45b220915504f893693209abc57d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 471d45b220915504f893693209abc57d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -384,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lamp_mesh (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d50cf3ef635cb942a43009b33905c3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d50cf3ef635cb942a43009b33905c3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -446,6 +455,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
       propertyPath: m_Name
       value: billboard_mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -510,6 +523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Tree_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ede154fab3d222444bee2634a7175825, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ede154fab3d222444bee2634a7175825, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.710005
@@ -572,6 +589,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f5bc3db758721a3448188be1931d14b3, type: 3}
       propertyPath: m_Name
       value: Prop_Umbrella_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5bc3db758721a3448188be1931d14b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5bc3db758721a3448188be1931d14b3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -698,6 +719,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 847f05299e763944fbcb918bbeb91f81, type: 3}
       propertyPath: m_Name
       value: Prop_TirePile
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 847f05299e763944fbcb918bbeb91f81, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 847f05299e763944fbcb918bbeb91f81, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1294,6 +1319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Beachseat_02
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8d9cdeea2b169ec4fb33012b49924463, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8d9cdeea2b169ec4fb33012b49924463, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.5
@@ -1712,6 +1741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Umbrella_02
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 82d3701155d02e04090b77a5a4e47369, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 82d3701155d02e04090b77a5a4e47369, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.94
@@ -1837,6 +1870,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5d50cf3ef635cb942a43009b33905c3d, type: 3}
       propertyPath: m_Name
       value: lamp_mesh (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5d50cf3ef635cb942a43009b33905c3d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d50cf3ef635cb942a43009b33905c3d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2567,6 +2604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Umbrella_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 65e19a3c5fb92df4cb0d99daca342cec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65e19a3c5fb92df4cb0d99daca342cec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.2
@@ -3020,6 +3061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Env_Rocks_03
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c85ba223e186cb849af9af8c140d2457, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c85ba223e186cb849af9af8c140d2457, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21
@@ -3145,6 +3190,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 798d0ce4417055244b0da7dbdd7cb46a, type: 3}
       propertyPath: m_Name
       value: Prop_Beachseat_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 798d0ce4417055244b0da7dbdd7cb46a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 798d0ce4417055244b0da7dbdd7cb46a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3561,7 +3610,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3576,7 +3625,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 90
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -3622,7 +3671,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1262812771
 Transform:
@@ -4583,6 +4632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_AutoRepair
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 04339706bd57d0e4ca629c1c3ef52dfb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04339706bd57d0e4ca629c1c3ef52dfb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -4775,7 +4828,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1953922328
 Transform:
@@ -5007,6 +5060,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 44b9ead1b0029ec4d8cffa009c4b0702, type: 3}
       propertyPath: m_Name
       value: Prop_Beachseat_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44b9ead1b0029ec4d8cffa009c4b0702, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44b9ead1b0029ec4d8cffa009c4b0702, type: 3}
       propertyPath: m_LocalPosition.x
